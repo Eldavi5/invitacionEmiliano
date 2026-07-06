@@ -13,48 +13,49 @@ export function MusicDock({ title, description }: MusicDockProps) {
 
   return (
     <div className="fixed bottom-4 right-4 z-50 sm:bottom-6 sm:right-6">
-      {/* Self-contained styling for specialized music animations */}
+      {/* Self-contained styling for specialized music flight animations */}
       <style>{`
-        @keyframes bearDance {
-          0%, 100% { transform: rotate(-6deg) translateY(0px) scale(1); }
-          50% { transform: rotate(6deg) translateY(-3px) scale(1.06); }
+        @keyframes planeFlightWiggle {
+          0%, 100% { transform: rotate(-8deg) translateY(0px) scale(1); }
+          50% { transform: rotate(8deg) translateY(-4px) scale(1.08); }
         }
-        @keyframes cheekPulse {
-          0%, 100% { opacity: 0.5; transform: scale(1); }
-          50% { opacity: 0.9; transform: scale(1.15); }
+        @keyframes propellerSpin {
+          0% { transform: rotate(0deg); }
+          100% { transform: rotate(360deg); }
         }
         @keyframes noteFloat1 {
           0% { transform: translate(0, 0) scale(0.6) rotate(0deg); opacity: 0; }
           20% { opacity: 0.8; }
-          100% { transform: translate(12px, -55px) scale(1.1) rotate(15deg); opacity: 0; }
+          100% { transform: translate(14px, -60px) scale(1.15) rotate(20deg); opacity: 0; }
         }
         @keyframes noteFloat2 {
           0% { transform: translate(0, 0) scale(0.6) rotate(0deg); opacity: 0; }
           20% { opacity: 0.8; }
-          100% { transform: translate(-14px, -60px) scale(1.1) rotate(-20deg); opacity: 0; }
+          100% { transform: translate(-16px, -65px) scale(1.15) rotate(-25deg); opacity: 0; }
         }
         @keyframes noteFloat3 {
           0% { transform: translate(0, 0) scale(0.5) rotate(0deg); opacity: 0; }
           20% { opacity: 0.8; }
-          100% { transform: translate(8px, -45px) scale(1) rotate(10deg); opacity: 0; }
+          100% { transform: translate(10px, -50px) scale(1) rotate(15deg); opacity: 0; }
         }
-        .anim-bear-dance {
-          animation: bearDance 1.6s ease-in-out infinite;
-          transform-origin: bottom center;
+        .anim-plane-flight {
+          animation: planeFlightWiggle 1.4s ease-in-out infinite;
+          transform-origin: center center;
         }
-        .anim-cheek-pulse {
-          animation: cheekPulse 1.2s ease-in-out infinite;
+        .anim-propeller {
+          animation: propellerSpin 0.3s linear infinite;
+          transform-origin: 41px 29px; /* Center of propeller */
         }
         .note-1 {
-          animation: noteFloat1 2.2s linear infinite;
+          animation: noteFloat1 2.4s linear infinite;
         }
         .note-2 {
-          animation: noteFloat2 2.2s linear infinite;
-          animation-delay: 0.7s;
+          animation: noteFloat2 2.4s linear infinite;
+          animation-delay: 0.8s;
         }
         .note-3 {
-          animation: noteFloat3 2.2s linear infinite;
-          animation-delay: 1.4s;
+          animation: noteFloat3 2.4s linear infinite;
+          animation-delay: 1.6s;
         }
       `}</style>
 
@@ -75,8 +76,8 @@ export function MusicDock({ title, description }: MusicDockProps) {
           </>
         )}
 
-        {/* Custom Bear SVG Container */}
-        <div className={`relative w-12 h-12 flex items-center justify-center ${isPlaying ? "anim-bear-dance" : ""}`}>
+        {/* Custom Airplane SVG Container */}
+        <div className={`relative w-12 h-12 flex items-center justify-center ${isPlaying ? "anim-plane-flight" : ""}`}>
           <svg
             width="48"
             height="48"
@@ -85,98 +86,48 @@ export function MusicDock({ title, description }: MusicDockProps) {
             xmlns="http://www.w3.org/2000/svg"
             className="w-full h-full select-none"
           >
-            {/* Bear Ears */}
-            <circle cx="16" cy="18" r="6.5" fill="#E6C280" />
-            <circle cx="16" cy="18" r="3.5" fill="#FCE7F3" />
-            <circle cx="40" cy="18" r="6.5" fill="#E6C280" />
-            <circle cx="40" cy="18" r="3.5" fill="#FCE7F3" />
+            {/* Plane Tail Wing */}
+            <path d="M12 28L4 16H8L18 28Z" fill="#0284C7" stroke="#FFF" strokeWidth="0.8" />
 
-            {/* Bear Head */}
-            <circle cx="28" cy="30" r="16.5" fill="#E6C280" />
+            {/* Fuselage core */}
+            <rect x="10" y="22" width="32" height="14" rx="7" fill="#38BDF8" stroke="#FFFFFF" strokeWidth="1.2" />
 
-            {/* Bear Snout */}
-            <ellipse cx="28" cy="34" rx="5.5" ry="4" fill="#FFFBF2" />
+            {/* Cockpit canopy (Glass) */}
+            <path d="M28 22C31 22 36 25 36 29H28V22Z" fill="#E0F2FE" />
             
-            {/* Bear Nose */}
-            <path
-              d="M26.5 33.5C26.5 32.5 28 31.8 28 31.8C28 31.8 29.5 32.5 29.5 33.5C29.5 34.5 28 35.2 28 35.2C28 35.2 26.5 34.5 26.5 33.5Z"
-              fill="#334155"
-            />
-
-            {/* Bear Mouth */}
-            <path d="M28 35.5V37" stroke="#334155" strokeWidth="1" />
-
-            {/* Cheek blush */}
-            <circle
-              cx="16.5"
-              cy="32.5"
-              r="2.5"
-              fill="#FCA5A5"
-              className={isPlaying ? "anim-cheek-pulse" : ""}
-            />
-            <circle
-              cx="39.5"
-              cy="32.5"
-              r="2.5"
-              fill="#FCA5A5"
-              className={isPlaying ? "anim-cheek-pulse" : ""}
-            />
-
-            {/* Dynamic Eyes based on playing state */}
+            {/* Cockpit Eyes inside glass */}
             {isPlaying ? (
-              // Happy winking / dancing eyes (^ ^)
-              <>
-                <path
-                  d="M18.5 28C19 26.5 21 26.5 21.5 28"
-                  stroke="#334155"
-                  strokeWidth="2.2"
-                  strokeLinecap="round"
-                  fill="none"
-                />
-                <path
-                  d="M34.5 28C35 26.5 37 26.5 37.5 28"
-                  stroke="#334155"
-                  strokeWidth="2.2"
-                  strokeLinecap="round"
-                  fill="none"
-                />
-              </>
+              // Happy winking eyes
+              <path d="M30 26Q32 24 33 26" stroke="#0284C7" strokeWidth="1.8" strokeLinecap="round" />
             ) : (
-              // Sleeping / resting eyes (u u)
-              <>
-                <path
-                  d="M18.5 27.5C19 29 21 29 21.5 27.5"
-                  stroke="#334155"
-                  strokeWidth="2.2"
-                  strokeLinecap="round"
-                  fill="none"
-                />
-                <path
-                  d="M34.5 27.5C35 29 37 29 37.5 27.5"
-                  stroke="#334155"
-                  strokeWidth="2.2"
-                  strokeLinecap="round"
-                  fill="none"
-                />
-              </>
+              // Resting sleeping eyes
+              <path d="M30 25.5Q31.5 27 33 25.5" stroke="#0284C7" strokeWidth="1.8" strokeLinecap="round" />
             )}
 
-            {/* Baby-blue Headphones */}
-            {/* Top Band */}
+            {/* Propeller Hub Nose */}
+            <path d="M42 26.5C43.5 26.5 44.5 27.5 44.5 29C44.5 30.5 43.5 31.5 42 31.5V26.5Z" fill="#F59E0B" />
+            
+            {/* Propeller Blades (always visible, spins when playing) */}
+            <g className={isPlaying ? "anim-propeller" : ""}>
+              <ellipse cx="41.5" cy="29" rx="1.5" ry="10" fill="#E2E8F0" opacity="0.85" stroke="#D97706" strokeWidth="0.6" />
+            </g>
+
+            {/* Main wing */}
+            <path d="M24 35L16 48C15 50 19 51 21 49L32 35H24Z" fill="#0284C7" stroke="#FFFFFF" strokeWidth="1.2" />
+
+            {/* Headphones over cockpit */}
+            {/* Headband */}
             <path
-              d="M13.5 24C13.5 24 18.5 13 28 13C37.5 13 42.5 24 42.5 24"
+              d="M20 23C20 23 23 15 28 15C33 15 36 23 36 23"
               stroke="#0284C7"
-              strokeWidth="3.2"
+              strokeWidth="2.5"
               fill="none"
               strokeLinecap="round"
             />
-            {/* Left Cup */}
-            <rect x="9.5" y="21.5" width="5.5" height="11" rx="2.5" fill="#38BDF8" stroke="#0284C7" strokeWidth="1" />
-            <rect x="13.5" y="23" width="2" height="8" rx="1" fill="#BAE6FD" />
-            
-            {/* Right Cup */}
-            <rect x="41" y="21.5" width="5.5" height="11" rx="2.5" fill="#38BDF8" stroke="#0284C7" strokeWidth="1" />
-            <rect x="40.5" y="23" width="2" height="8" rx="1" fill="#BAE6FD" />
+            {/* Left Ear Pad */}
+            <rect x="17.5" y="21" width="3.5" height="7.5" rx="1.5" fill="#334155" />
+            {/* Right Ear Pad */}
+            <rect x="35" y="21" width="3.5" height="7.5" rx="1.5" fill="#334155" />
           </svg>
         </div>
 

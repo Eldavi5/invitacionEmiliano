@@ -2732,7 +2732,7 @@ __turbopack_context__.s([
 const invitationContent = {
     es: {
         babyName: "Santiago",
-        hostName: "El Baby Shower de Santiago",
+        hostName: "El Vuelo de Santiago",
         parents: {
             mom: "Monica Silva Bello",
             dad: "Omar Barreto Resendiz"
@@ -2744,116 +2744,116 @@ const invitationContent = {
             mapsQuery: "Salón Nube Azul, Jardín Central"
         },
         eventLabels: {
-            date: "Día Especial",
-            time: "Hora de Reunión",
-            location: "Lugar Mágico"
+            date: "Fecha de Despegue",
+            time: "Hora de Embarque",
+            location: "Pista de Aterrizaje"
         },
         countdown: {
-            title: "Falta Muy Poco",
-            subtitle: "para abrazar a Santiago",
+            title: "Tiempo para el Despegue",
+            subtitle: "Vuelo con destino a Santiago",
             days: "Días",
             hours: "Horas",
             minutes: "Minutos",
             seconds: "Segundos"
         },
-        phrase: "¡Un pequeño milagro está por llegar! Con el corazón lleno de ilusión y los brazos listos para abrazar, esperamos la llegada de nuestro amado Santiago. ¡Acompáñanos a celebrar su hermosa historia!",
-        phraseTwo: "Pintamos el mundo de azul y blanco para recibir al osito más tierno de nuestras vidas. ¡Cada sonrisa compartida con ustedes será un regalo inolvidable!",
-        phraseThree: "¡La felicidad se multiplica cuando se comparte! Queremos reír, cantar y guardar en el corazón cada instante de este día tan especial y mágico.",
+        phrase: "¡Nuestra mayor aventura está por despegar! Con el corazón lleno de ilusión y listos para emprender el viaje más hermoso, esperamos la llegada de nuestro amado co-piloto, Santiago. ¡Acompáñanos a bordo!",
+        phraseTwo: "Pintamos el cielo de azul y blanco para guiar el vuelo de Santiago hacia nuestras vidas. ¡Cada pase de abordar compartido con ustedes es un recuerdo invaluable en nuestra bitácora!",
+        phraseThree: "¡El viaje es más hermoso cuando se comparte con una tripulación especial! Queremos volar alto, reír juntos y guardar en el corazón cada milla de este gran día.",
         quotes: [
             {
-                text: "¡Santiago es nuestro rayito de sol, que viene a iluminar de ternura y puras risas nuestro hogar!"
+                text: "¡Santiago es nuestro pequeño cometa, que viene a pintar de estrellas y puras risas nuestro cielo!"
             },
             {
-                text: "¡Contamos los latidos y los días para escuchar sus risitas y ver su carita por primera vez!"
+                text: "¡Contamos los días y calibramos los mandos para escuchar sus risitas y ver su carita por primera vez!"
             },
             {
-                text: "¡Celebremos la vida, el amor y la dulce espera del regalo más hermoso que el cielo nos ha enviado!"
+                text: "¡Celebremos la vida, el amor y el despegue de la aventura más emocionante que el cielo nos ha regalado!"
             },
             {
-                text: "¡Cada globo, cada osito y cada detalle azul susurran lo mucho que ya te amamos, pequeño Santiago!"
+                text: "¡Cada nube, cada avioncito de papel y cada detalle azul susurran lo mucho que ya te amamos, co-piloto Santiago!"
             }
         ],
-        message: "¡Estamos listos para llenar de amor y magia el camino de Santiago! Queremos que seas parte de esta hermosa fiesta de bienvenida, donde no faltarán los abrazos de oso, las risas y los momentos mágicos.",
-        babySection: "¡Un nidito lleno de amor! Cada rincón de su futuro cuarto y cada detalle del evento están cobrando vida para darle la bienvenida más cálida al nuevo integrante de la familia.",
-        babyStyle: "Un estilo mágico Baby Bloom en tonos azul y blanco puro. Diseñamos un ambiente tierno, con nubecitas, estrellas y ositos esponjosos para que sientas la calidez de su llegada desde el primer instante.",
-        momentsTitle: "Momentos Mágicos del Día",
+        message: "¡El Vuelo SANTIAGO-2026 está listo en la pista! Te invitamos a ser parte de nuestra tripulación en esta hermosa fiesta de bienvenida, donde compartiremos risas, juegos y momentos inolvidables a gran altura.",
+        babySection: "¡Un hangar lleno de sueños! Preparamos con amor cada detalle del equipaje y de la cabina para darle la bienvenida más cómoda y segura al nuevo co-piloto de la familia.",
+        babyStyle: "Un estilo aéreo Baby Bloom en tonos azul y blanco nube. Diseñamos un ambiente celestial, con avioncitos retro, nubes esponjosas y destellos de estrellas para que sientas la emoción de volar.",
+        momentsTitle: "Escalas de Nuestra Celebración",
         moments: [
             {
-                title: "Dulce Bienvenida",
-                description: "Recibiremos a nuestros invitados en un bosque de nubes azules y tiernos ositos para iniciar la celebración con el corazón contento."
+                title: "Check-in y Bienvenida",
+                description: "Daremos la bienvenida a toda nuestra tripulación en un aeropuerto celestial lleno de nubes azules para comenzar la aventura con el corazón alegre."
             },
             {
-                title: "Detalles Con Amor",
-                description: "Disfrutaremos de una mesa de dulces inspirada en la suavidad de un peluche, con bocadillos preparados especialmente para endulzar el día."
+                title: "Vuelo a Gran Altura",
+                description: "Disfrutaremos de un banquete inspirado en las alturas, con bocadillos dulces y bebidas refrescantes preparadas para endulzar el viaje."
             },
             {
-                title: "Cápsula de Recuerdos",
-                description: "Escribiremos cartitas llenas de buenos deseos para Santiago y nos tomaremos fotos memorables que formarán su primer álbum de vida."
+                title: "Bitácora de Vuelo",
+                description: "Abriremos un espacio para que escribas tus mejores deseos para Santiago y nos tomemos fotos aéreas memorables en nuestra cabina de recuerdos."
             },
             {
-                title: "Abrazo de Familia",
-                description: "Un brindis muy especial entre risas, juegos y la inmensa alegría de saber que Santiago crecerá rodeado de personas maravillosas."
+                title: "Aterrizaje Feliz",
+                description: "Un brindis muy especial entre risas, juegos y la inmensa alegría de saber que el vuelo de Santiago estará acompañado de personas increíbles."
             }
         ],
-        eventTitle: "Detalles del Evento",
-        eventSubtitle: "Todo listo para nuestro gran encuentro",
-        eventNote: "Preparamos una tarde llena de dulzura y tranquilidad para que disfrutemos cada segundo sin prisas. ¡Te esperamos con emoción!",
-        locationImageTitle: "Nuestra Ubicación",
-        locationImageCaption: "El hermoso Salón Nube Azul nos recibirá con sus hermosas áreas verdes ideales para festejar.",
-        mapsButton: "Cómo llegar en Google Maps",
-        photosTitle: "Galería de la Dulce Espera",
-        photosIntro: "Nuestros Recuerdos",
+        eventTitle: "Plan de Vuelo",
+        eventSubtitle: "Todo listo para nuestro despegue",
+        eventNote: "Preparamos un viaje suave y lleno de tranquilidad para que disfrutes cada milla sin prisas. ¡Prepara tu pase de abordar!",
+        locationImageTitle: "Nuestra Pista de Aterrizaje",
+        locationImageCaption: "El hermoso Salón Nube Azul nos recibirá en sus instalaciones listas para el aterrizaje del gran día.",
+        mapsButton: "Ver Ruta en Google Maps",
+        photosTitle: "Bitácora del Co-Piloto",
+        photosIntro: "Galería del Viaje",
         photos: [
             {
-                title: "El Primer Latido",
-                caption: "Nuestra primera mirada a Santiago. ¡Su pequeño corazoncito latiendo con fuerza nos llena de felicidad!",
-                placeholder: "Ultrasonido de Santiago"
+                title: "El Radar de Amor",
+                caption: "Nuestra primera mirada a Santiago en el ultrasonido. ¡Su pequeño motor latiendo con fuerza en la pantalla!",
+                placeholder: "Primer Radar de Santiago"
             },
             {
-                title: "Detalles de Amor",
-                caption: "Zapatitos azules, peluches y ropa suave listos para recibir su primer día en este hermoso mundo.",
-                placeholder: "Preparativos y Decoración"
+                title: "Equipaje Listo",
+                caption: "Zapatitos de piloto, juguetes de aviones y ropa suave listos en el hangar para su primer viaje en este mundo.",
+                placeholder: "Preparación de Equipaje"
             },
             {
-                title: "Estilo Baby Bloom",
-                caption: "Nuestra mesa de regalos y la ropita más tierna para consentir a Santiago en sus primeros meses.",
-                placeholder: "Detalles del Evento"
+                title: "Estilo de Altura",
+                caption: "Nuestra mesa de regalos y los detalles celestiales para consentir a Santiago en su despegue de vida.",
+                placeholder: "Detalles del Despegue"
             },
             {
-                title: "Nuestra Familia",
-                caption: "Mónica y Omar contando los días para iniciar la aventura más bonita de sus vidas.",
-                placeholder: "Papás de Santiago"
+                title: "Los Comandantes",
+                caption: "Mónica y Omar listos para tomar el control de los mandos en esta hermosa aventura que comienza.",
+                placeholder: "Pilotos de Santiago"
             }
         ],
-        parentsTitle: "Los Papás de Santiago",
-        parentsSubtitle: "Mónica & Omar",
-        parentsPhotosTitle: "Nuestra Dulce Espera",
-        parentsPhotosCaption: "El amor nos une y la llegada de Santiago nos transforma. Estamos felices de compartir esta gran ilusión contigo.",
+        parentsTitle: "Pilotos al Mando",
+        parentsSubtitle: "Capitanes: Mónica & Omar",
+        parentsPhotosTitle: "Nuestra Gran Aventura",
+        parentsPhotosCaption: "El amor es nuestro combustible y la llegada de Santiago es nuestro destino más hermoso. Estamos felices de emprender este viaje contigo.",
         rsvp: {
-            title: "Confirmar Asistencia",
-            heading: "Asegura tu lugar con un mensajito",
-            description: "Por favor, confírmanos tu asistencia completando el formulario. Al presionar el botón, se generará tu mensaje personalizado para enviarlo por WhatsApp.",
+            title: "Confirmar Pase de Abordar",
+            heading: "Reserva tu asiento en la tripulación",
+            description: "Confímanos tu asistencia completando el formulario. Al presionar el botón, se generará tu pase de abordar de confirmación para enviarlo por WhatsApp.",
             phone: "+52 56 1152 8080",
             familyLabel: "Tu Nombre o Familia",
             familyPlaceholder: "Ej. Familia Gómez o Sofía Pérez",
-            peopleLabel: "¿Cuántas personas asistirán?",
-            peoplePlaceholder: "Selecciona el número de personas",
-            submit: "Enviar Confirmación por WhatsApp",
-            defaultFamily: "Familia Invitada"
+            peopleLabel: "¿Cuántos asientos reservarás?",
+            peoplePlaceholder: "Selecciona los asientos",
+            submit: "Confirmar Abordaje por WhatsApp",
+            defaultFamily: "Tripulación Invitada"
         },
         music: {
-            title: "Música de Fondo",
-            description: "Melodías dulces para ambientar la espera de Santiago.",
+            title: "Sinfonía en las Nubes",
+            description: "Melodías celestiales para ambientar el viaje de Santiago.",
             buttonLabel: "Música"
         },
         language: {
             label: "ES / EN"
         },
-        heroPill: "🍼 Baby Shower"
+        heroPill: "✈️ Vuelo de Santiago"
     },
     en: {
         babyName: "Santiago",
-        hostName: "Santiago's Baby Shower",
+        hostName: "Santiago's Flight",
         parents: {
             mom: "Monica Silva Bello",
             dad: "Omar Barreto Resendiz"
@@ -2865,112 +2865,112 @@ const invitationContent = {
             mapsQuery: "Salón Nube Azul, Jardín Central"
         },
         eventLabels: {
-            date: "Special Day",
-            time: "Gathering Time",
-            location: "Magical Venue"
+            date: "Departure Date",
+            time: "Boarding Time",
+            location: "Landing Runway"
         },
         countdown: {
-            title: "Almost There",
-            subtitle: "to cuddle Santiago",
+            title: "Time to Takeoff",
+            subtitle: "Flight bound for Santiago",
             days: "Days",
             hours: "Hours",
             minutes: "Minutes",
             seconds: "Seconds"
         },
-        phrase: "A little miracle is on its way! With hearts full of hope and arms ready to hug, we wait for our beloved Santiago. Join us to celebrate his beautiful story!",
-        phraseTwo: "Painting the world in blue and white to welcome the cuddliest little bear. Every smile shared with you will be an unforgettable gift!",
-        phraseThree: "Happiness multiplies when shared! We want to laugh, sing, and hold in our hearts every magical moment of this special day.",
+        phrase: "Our greatest adventure is about to take off! With hearts full of dreams and ready to embark on the most beautiful journey, we await the arrival of our beloved co-pilot, Santiago. Join us on board!",
+        phraseTwo: "We paint the sky in blue and white to guide Santiago's flight into our lives. Every boarding pass shared with you is a priceless memory in our flight log!",
+        phraseThree: "The journey is more beautiful when shared with a special crew! We want to fly high, laugh together, and keep every mile of this great day in our hearts.",
         quotes: [
             {
-                text: "Santiago is our little ray of sunshine, coming to fill our home with tenderness and laughter!"
+                text: "Santiago is our little comet, coming to paint our sky with stars and pure laughter!"
             },
             {
-                text: "We count every heartbeat and day to hear his sweet giggles and see his little face for the first time!"
+                text: "We count the days and calibrate the controls to hear his sweet giggles and see his face for the first time!"
             },
             {
-                text: "Let's celebrate life, love, and the sweet anticipation of the most beautiful gift sent from heaven!"
+                text: "Let's celebrate life, love, and the takeoff of the most exciting adventure heaven has given us!"
             },
             {
-                text: "Every balloon, every teddy bear, and every blue detail whispers how much we already love you, little Santiago!"
+                text: "Every cloud, every paper plane, and every blue detail whispers how much we already love you, co-pilot Santiago!"
             }
         ],
-        message: "We are ready to fill Santiago's path with love and magic! We want you to be part of this warm welcome party, full of bear hugs, laughter, and magical moments.",
-        babySection: "A nest full of love! Every corner of his future room and every detail of the event are coming to life to give the warmest welcome to our new family member.",
-        babyStyle: "A magical Baby Bloom style in pure blue and white tones. We designed a tender environment with soft clouds, stars, and fluffy teddy bears so you feel the warmth of his arrival.",
-        momentsTitle: "Magical Moments of the Day",
+        message: "Flight SANTIAGO-2026 is ready on the runway! We invite you to be part of our crew in this beautiful welcoming party, where we will share laughter, games, and unforgettable high-flying moments.",
+        babySection: "A hangar full of dreams! We prepare with love every detail of the luggage and the cabin to give the most comfortable and safe welcome to the family's new co-pilot.",
+        babyStyle: "A Baby Bloom aerial style in blue and cloud white tones. We designed a celestial environment with retro airplanes, fluffy clouds, and sparkling stars so you feel the excitement of flying.",
+        momentsTitle: "Our Celebration Flight Stops",
         moments: [
             {
-                title: "Sweet Welcome",
-                description: "We will welcome our guests in a forest of blue clouds and soft teddy bears to kick off the celebration with happy hearts."
+                title: "Check-in & Welcome",
+                description: "We will welcome our crew to a celestial airport filled with blue clouds to start our adventure with happy hearts."
             },
             {
-                title: "Details With Love",
-                description: "Enjoy a dessert table inspired by teddy bear sweetness, featuring delicious snacks designed to sweeten the day."
+                title: "High Altitude Flight",
+                description: "We will enjoy a high-altitude-inspired feast with sweet snacks and refreshing drinks prepared to sweeten the journey."
             },
             {
-                title: "Memory Capsule",
-                description: "Write warm wishes for Santiago and take memorable photos that will fill his first album of life."
+                title: "Flight Logbook",
+                description: "We will open a space for you to write your best wishes for Santiago and take memorable aerial photos in our memory cockpit."
             },
             {
-                title: "Family Hug",
-                description: "A special toast filled with laughter, games, and the immense joy of knowing Santiago will grow surrounded by wonderful people."
+                title: "Happy Landing",
+                description: "A very special toast filled with laughter, games, and the immense joy of knowing Santiago's flight will be accompanied by amazing people."
             }
         ],
-        eventTitle: "Event Details",
-        eventSubtitle: "Everything ready for our big day",
-        eventNote: "We have prepared a sweet and cozy afternoon to enjoy every second without rush. We wait for you with excitement!",
-        locationImageTitle: "Our Venue",
-        locationImageCaption: "The beautiful Salón Nube Azul will welcome us with green spaces perfect for celebrating.",
-        mapsButton: "Get Directions on Google Maps",
-        photosTitle: "Gallery of our Sweet Expectation",
-        photosIntro: "Our Memories",
+        eventTitle: "Flight Plan",
+        eventSubtitle: "Everything ready for our takeoff",
+        eventNote: "We have prepared a smooth and peaceful journey for you to enjoy every mile without rush. Get your boarding pass ready!",
+        locationImageTitle: "Our Landing Runway",
+        locationImageCaption: "The beautiful Salón Nube Azul will welcome us, with its facilities fully prepared for landing on our big day.",
+        mapsButton: "View Route on Google Maps",
+        photosTitle: "Co-Pilot's Logbook",
+        photosIntro: "Journey Gallery",
         photos: [
             {
-                title: "The First Heartbeat",
-                caption: "Our first look at Santiago. His tiny heart beating strong fills us with true happiness!",
-                placeholder: "Santiago's Ultrasound"
+                title: "The Love Radar",
+                caption: "Our first look at Santiago in the ultrasound. His tiny motor beating strong on the screen!",
+                placeholder: "Santiago's First Radar"
             },
             {
-                title: "Details of Love",
-                caption: "Tiny blue shoes, soft plushies, and cozy outfits ready for his first days in this beautiful world.",
-                placeholder: "Preparation & Decors"
+                title: "Luggage Ready",
+                caption: "Pilot shoes, airplane toys, and cozy outfits ready in the hangar for his first trip in this world.",
+                placeholder: "Luggage Preparation"
             },
             {
-                title: "Baby Bloom Style",
-                caption: "Our gift registry and the cutest outfits to pamper Santiago during his first months.",
-                placeholder: "Event Highlights"
+                title: "High-Flying Style",
+                caption: "Our gift registry and celestial details to pamper Santiago on his takeoff of life.",
+                placeholder: "Takeoff Highlights"
             },
             {
-                title: "Our Family",
-                caption: "Monica and Omar counting down the days to start the most beautiful adventure of their lives.",
-                placeholder: "Santiago's Parents"
+                title: "The Commanders",
+                caption: "Monica and Omar ready to take control of the cockpit in this beautiful adventure.",
+                placeholder: "Santiago's Pilots"
             }
         ],
-        parentsTitle: "Santiago's Parents",
-        parentsSubtitle: "Monica & Omar",
-        parentsPhotosTitle: "Our Sweet Expectation",
-        parentsPhotosCaption: "Love unites us and Santiago's arrival transforms us. We are happy to share this dream with you.",
+        parentsTitle: "Pilots in Command",
+        parentsSubtitle: "Captains: Monica & Omar",
+        parentsPhotosTitle: "Our Great Adventure",
+        parentsPhotosCaption: "Love is our fuel and Santiago's arrival is our most beautiful destination. We are happy to embark on this journey with you.",
         rsvp: {
-            title: "Confirm Attendance",
-            heading: "Secure your spot with a message",
-            description: "Please confirm your attendance by filling out the form. Pressing the button will generate your customized message to send over WhatsApp.",
+            title: "Confirm Boarding Pass",
+            heading: "Reserve your seat in the crew",
+            description: "Confirm your attendance by filling out the form. Pressing the button will generate your confirmation boarding pass to send over WhatsApp.",
             phone: "+52 56 1152 8080",
             familyLabel: "Your Name or Family Name",
             familyPlaceholder: "Ex. Gomez Family or Sofia Perez",
-            peopleLabel: "How many guests will attend?",
-            peoplePlaceholder: "Select number of guests",
-            submit: "Send Confirmation via WhatsApp",
-            defaultFamily: "Guest Family"
+            peopleLabel: "How many seats will you reserve?",
+            peoplePlaceholder: "Select the seats",
+            submit: "Confirm Boarding via WhatsApp",
+            defaultFamily: "Guest Crew"
         },
         music: {
-            title: "Background Music",
-            description: "Sweet melodies to set the mood for Santiago's arrival.",
+            title: "Symphony in the Clouds",
+            description: "Celestial melodies to set the mood for Santiago's flight.",
             buttonLabel: "Music"
         },
         language: {
             label: "EN / ES"
         },
-        heroPill: "🍼 Baby Shower"
+        heroPill: "✈️ Santiago's Flight"
     }
 };
 }),

@@ -75,6 +75,9 @@ export function useBackgroundMusic() {
   const play = useCallback(async () => {
     if (typeof window === "undefined") return;
     
+    // Dispatch event to pause heartbeat
+    window.dispatchEvent(new CustomEvent("pause-heartbeat"));
+    
     // Safety stop before starting
     stop();
 
@@ -176,7 +179,13 @@ export function useBackgroundMusic() {
   }, [stop]);
 
   useEffect(() => {
+    const handlePauseBgMusic = () => {
+      stop();
+    };
+    window.addEventListener("pause-bg-music", handlePauseBgMusic);
+
     return () => {
+      window.removeEventListener("pause-bg-music", handlePauseBgMusic);
       stop();
     };
   }, [stop]);

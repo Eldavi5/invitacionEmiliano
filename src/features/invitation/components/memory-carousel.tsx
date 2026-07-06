@@ -3,13 +3,13 @@
 import React, { useRef, useState, useEffect } from "react";
 import type { Locale } from "@/data/invitation";
 import { invitationContent } from "@/data/invitation";
-import { ChevronLeft, ChevronRight, Heart } from "lucide-react";
+import { ChevronLeft, ChevronRight, Plane } from "lucide-react";
 import {
-  BabyBear,
-  MamaPapaBear,
-  GiftBear,
-  UltrasoundBear
-} from "./bear-illustrations";
+  BabyAirplane,
+  PilotsAirplane,
+  LandingRunway,
+  UltrasoundBoardingPass
+} from "./airplane-illustrations";
 
 interface MemoryCarouselProps {
   locale: Locale;
@@ -25,25 +25,37 @@ export function MemoryCarousel({ locale }: MemoryCarouselProps) {
       title: content.photos[0].title,
       caption: content.photos[0].caption,
       tag: content.photos[0].placeholder,
-      illustration: <UltrasoundBear size={180} className="bear-float" />
+      illustration: (
+        <img
+          src="/images/fotodelbebe.jpeg"
+          alt={content.photos[0].title}
+          className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+        />
+      )
     },
     {
       title: content.photos[1].title,
       caption: content.photos[1].caption,
       tag: content.photos[1].placeholder,
-      illustration: <GiftBear size={180} className="bear-float" style={{ animationDelay: "1.5s" }} />
+      illustration: (
+        <img
+          src="/images/OsoSorpresa.jpeg"
+          alt={content.photos[1].title}
+          className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+        />
+      )
     },
     {
       title: content.photos[2].title,
       caption: content.photos[2].caption,
       tag: content.photos[2].placeholder,
-      illustration: <BabyBear size={180} className="bear-float" style={{ animationDelay: "3s" }} />
+      illustration: <LandingRunway size={180} className="plane-float" style={{ animationDelay: "3s" }} />
     },
     {
       title: content.photos[3].title,
       caption: content.photos[3].caption,
       tag: content.photos[3].placeholder,
-      illustration: <MamaPapaBear size={180} className="bear-float" style={{ animationDelay: "0.5s" }} />
+      illustration: <PilotsAirplane size={180} className="plane-float" style={{ animationDelay: "0.5s" }} />
     }
   ];
 
@@ -110,8 +122,8 @@ export function MemoryCarousel({ locale }: MemoryCarouselProps) {
         </div>
         <p className="text-sm leading-6 text-slate-600 max-w-md">
           {locale === "es"
-            ? "Desliza para ver la dulzura, detalles y momentos mágicos que estamos preparando para celebrar su llegada."
-            : "Swipe to view the sweetness, details, and magical moments we are preparing to celebrate his arrival."}
+            ? "Desliza para ver la bitácora de vuelo y los preparativos celestiales que darán la bienvenida a Santiago."
+            : "Swipe to view the flight log and celestial preparations welcoming Santiago."}
         </p>
       </div>
 
@@ -146,14 +158,20 @@ export function MemoryCarousel({ locale }: MemoryCarouselProps) {
               className="w-full shrink-0 snap-start snap-always p-6 md:p-8 flex flex-col items-center text-center"
             >
               {/* Image / Illustration Container with glass style */}
-              <div className="relative w-full max-w-sm aspect-[4/3.2] flex items-center justify-center rounded-[1.75rem] bg-gradient-to-b from-sky-50/70 to-white/95 border border-sky-100/50 shadow-[inset_0_2px_4px_rgba(56,189,248,0.03)] overflow-hidden">
-                <div className="absolute top-2 left-2 flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/80 border border-sky-100/30 text-[0.62rem] font-semibold text-sky-700 tracking-wider uppercase">
-                  <Heart className="h-3 w-3 fill-sky-200 text-sky-400 animate-pulse" />
+              <div className="relative w-full max-w-sm aspect-[4/3.2] flex items-center justify-center rounded-[1.75rem] bg-gradient-to-b from-sky-50/50 to-white/95 border border-sky-100/40 shadow-[inset_0_2px_4px_rgba(56,189,248,0.03)] overflow-hidden">
+                <div className="absolute top-2 left-2 z-10 flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/90 border border-sky-100/30 text-[0.62rem] font-bold text-sky-700 tracking-wider uppercase shadow-sm">
+                  <Plane className="h-3.5 w-3.5 text-sky-500 animate-pulse" />
                   {slide.tag}
                 </div>
-                <div className="relative p-4">
-                  {slide.illustration}
-                </div>
+                {index === 0 || index === 1 ? (
+                  <div className="absolute inset-0 w-full h-full">
+                    {slide.illustration}
+                  </div>
+                ) : (
+                  <div className="relative p-4">
+                    {slide.illustration}
+                  </div>
+                )}
               </div>
 
               {/* Text Description */}
@@ -180,7 +198,7 @@ export function MemoryCarousel({ locale }: MemoryCarouselProps) {
                   ? "w-7 bg-sky-700 shadow-[0_2px_8px_rgba(3,105,161,0.3)]"
                   : "w-2.5 bg-sky-200 hover:bg-sky-300"
               }`}
-              aria-label={`Ir a diapositiva ${index + 1}`}
+              aria-label={`Ir a escala ${index + 1}`}
             />
           ))}
         </div>
@@ -188,3 +206,4 @@ export function MemoryCarousel({ locale }: MemoryCarouselProps) {
     </section>
   );
 }
+export default MemoryCarousel;

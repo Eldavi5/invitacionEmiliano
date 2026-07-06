@@ -1,17 +1,18 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { BearBackground } from "@/components/ui/bear-background";
+import { SkyBackground } from "@/components/ui/sky-background";
 import { FloatingHearts } from "@/components/ui/floating-hearts";
 import { LanguageSwitch } from "@/components/ui/language-switch";
 import { MusicDock } from "@/components/ui/music-dock";
 import { Reveal } from "@/components/ui/reveal";
-import { FloatingElements } from "@/features/invitation/components/bear-illustrations";
+import { FloatingCloudsAndPlanes } from "@/features/invitation/components/airplane-illustrations";
 
 // Redesigned Sections
 import { HeroSection } from "@/features/invitation/sections/hero-section";
 import { EventSection } from "@/features/invitation/sections/event-section";
 import { ParentsSection } from "@/features/invitation/sections/parents-section";
+import { HeartbeatSection } from "@/features/invitation/sections/heartbeat-section";
 import { MemoryCarousel } from "@/features/invitation/components/memory-carousel";
 import { RSVPSection } from "@/features/invitation/sections/rsvp-section";
 
@@ -28,8 +29,8 @@ export function InvitationPage() {
   return (
     <main className="relative min-h-screen overflow-hidden text-slate-800 pb-20">
       {/* Decorative Vector and Cloud Backgrounds */}
-      <BearBackground />
-      <FloatingElements />
+      <SkyBackground />
+      <FloatingCloudsAndPlanes />
       <FloatingHearts />
 
       {/* Background music controller docks at bottom-right */}
@@ -45,6 +46,7 @@ export function InvitationPage() {
             label={locale === "es" ? "Cambiar idioma a inglés" : "Switch language to Spanish"}
           />
         </div>
+
         {/* 1. Hero Cover */}
         <Reveal>
           <HeroSection locale={locale} />
@@ -60,7 +62,12 @@ export function InvitationPage() {
           <ParentsSection locale={locale} />
         </Reveal>
 
-        {/* 4. Memories swipeable Gallery Carousel */}
+        {/* 4. Heartbeat Player Section */}
+        <Reveal>
+          <HeartbeatSection locale={locale} />
+        </Reveal>
+
+        {/* 5. Memories swipeable Gallery Carousel */}
         <Reveal delayClassName="reveal-delay-1">
           <MemoryCarousel locale={locale} />
         </Reveal>

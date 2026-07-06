@@ -28,7 +28,7 @@ interface CountdownCardProps {
 
 export function CountdownCard({ locale }: CountdownCardProps) {
   const content = invitationContent[locale];
-  const targetDate = useMemo(() => new Date("2026-08-24T16:00:00"), []);
+  const targetDate = useMemo(() => new Date("2026-08-01T16:00:00"), []);
   const [mounted, setMounted] = useState(false);
   const [countdown, setCountdown] = useState<CountdownParts>({ days: 0, hours: 0, minutes: 0, seconds: 0 });
 
