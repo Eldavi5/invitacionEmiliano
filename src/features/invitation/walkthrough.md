@@ -6,13 +6,17 @@ Hemos completado la transformación total de la invitación, migrando de la tem�
 
 ## Cambios Realizados
 
-### 1. Cambio de Hora de Embarque a las 5:00 PM (¡Nuevo!)
+### 1. Cambio Global de Orden de Nombres: "Omar y Mónica" (¡Nuevo!)
 - **Archivos modificados:**
   - [invitation.ts](file:///Volumes/Mac/MacExterno/Documents/NewProyectMona/src/data/invitation.ts)
-  - [countdown-card.tsx](file:///Volumes/Mac/MacExterno/Documents/NewProyectMona/src/components/ui/countdown-card.tsx)
+  - [parents-section.tsx](file:///Volumes/Mac/MacExterno/Documents/NewProyectMona/src/features/invitation/sections/parents-section.tsx)
+  - [rsvp-section.tsx](file:///Volumes/Mac/MacExterno/Documents/NewProyectMona/src/features/invitation/sections/rsvp-section.tsx)
 - **Cambios:**
-  - **Textos de la Invitación:** Actualizamos la propiedad de hora a **"5:00 PM"** tanto para la sección en español como para la sección en inglés.
-  - **Sincronización del Temporizador:** Actualizamos la fecha y hora objetivo del contador en `countdown-card.tsx` a **`2026-08-02T17:00:00`** para sincronizar el contador de cuenta regresiva exactamente a las 5 de la tarde.
+  - **Textos y Subtítulos:** Modificamos el orden de los nombres a **"Omar y Mónica"** (en español) y **"Omar and Monica"** (en inglés) en la sección de *Pilotos al Mando* y en el pie de foto de la diapositiva de *Los Comandantes* en la galería.
+  - **Atributos de Accesibilidad:** Cambiamos el atributo `alt` de la foto de los padres a **"Omar y Mónica"** en la maquetación.
+  - **Plantillas de WhatsApp (RSVP):** Actualizamos los textos predefinidos que se envían por WhatsApp al confirmar la asistencia:
+    - Español: `✈️ *¡Hola Capitanes Omar y Mónica!*`
+    - Inglés: `✈️ *Hello Captains Omar and Monica!*`
 
 ### 2. Integración de Fotos de los Papás
 - **Archivos modificados:**
@@ -20,20 +24,16 @@ Hemos completado la transformación total de la invitación, migrando de la tem�
   - [memory-carousel.tsx](file:///Volumes/Mac/MacExterno/Documents/NewProyectMona/src/features/invitation/components/memory-carousel.tsx)
   - [invitation.ts](file:///Volumes/Mac/MacExterno/Documents/NewProyectMona/src/data/invitation.ts)
 - **Cambios:**
-  - **Pilotos al Mando (Sección de Padres):**
-    - Reemplazamos la ilustración animada por tu foto real `omarymona.jpeg` renderizada en un marco pulido, redondeado y con efecto hover.
-    - Cambiamos el subtítulo informativo de *"Capitanes: Mónica & Omar"* a **"Omar y Monica"** (para español) y **"Omar and Monica"** (para inglés) según tu petición.
-  - **Diapositiva "Los Comandantes" (Galería de Viajes):**
-    - Cargamos la foto real `papas.jpeg` en la cuarta diapositiva de la Bitácora del Co-Piloto.
-    - Adaptamos la estructura del carrusel para estirar esta imagen a pantalla completa (*full-bleed*) dentro del pase de abordar simulado, tal como lo hicimos con las fotos del bebé y del oso.
+  - **Pilotos al Mando (Sección de Padres):** Reemplazamos la ilustración animada por tu foto real `omarymona.jpeg`.
+  - **Diapositiva "Los Comandantes" (Galería de Viajes):** Cargamos la foto real `papas.jpeg` en la cuarta diapositiva de la Bitácora del Co-Piloto a pantalla completa (*full-bleed*).
 
-### 3. Cambio de Fecha al 2 de Agosto de 2026
+### 3. Cambio de Fecha al 2 de Agosto de 2026 y Hora a las 5:00 PM
 - **Archivos modificados:**
   - [invitation.ts](file:///Volumes/Mac/MacExterno/Documents/NewProyectMona/src/data/invitation.ts)
   - [countdown-card.tsx](file:///Volumes/Mac/MacExterno/Documents/NewProyectMona/src/components/ui/countdown-card.tsx)
 - **Cambios:**
-  - **Textos Visuales:** Modificamos la fecha del evento a **"Domingo 2 de agosto de 2026"** en español y **"Sunday, August 2, 2026"** en inglés.
-  - **Sincronización del Contador:** Desplazamos la fecha objetivo del temporizador de cuenta regresiva en `countdown-card.tsx` al **2026-08-02T17:00:00**, asegurando que los días, horas y minutos restantes se calculen en base al nuevo día del despegue.
+  - **Textos Visuales:** Modificamos la fecha a **"Domingo 2 de agosto de 2026"** a las **"5:00 PM"** (y en inglés *"Sunday, August 2, 2026"*).
+  - **Sincronización del Contador:** Desplazamos la fecha objetivo del temporizador de cuenta regresiva en `countdown-card.tsx` al **2026-08-02T17:00:00**, asegurando la precisión de días, horas y minutos restantes.
 
 ### 4. Reset Off-Screen Sincronizado (Entrada Siempre por la Izquierda)
 - **Archivos modificados:**
@@ -100,11 +100,11 @@ Hemos compilado el proyecto localmente mediante `npm run build`:
 ```bash
 ▲ Next.js 16.2.10 (Turbopack)
 Creating an optimized production build ...
-✓ Compiled successfully in 923ms
+✓ Compiled successfully in 901ms
 Running TypeScript ...
-Finished TypeScript in 1191ms ...
+Finished TypeScript in 1158ms ...
 Generating static pages (3/3) ...
-✓ Generating static pages in 133ms
+✓ Generating static pages in 160ms
 Finalizing page optimization ...
 Route (app)             Size
 ┌ ○ /                   92.4 kB

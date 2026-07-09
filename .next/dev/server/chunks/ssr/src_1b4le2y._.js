@@ -2771,12 +2771,12 @@ const invitationContent = {
             },
             {
                 title: "Los Comandantes",
-                caption: "Mónica y Omar listos para tomar el control de los mandos en esta hermosa aventura que comienza.",
+                caption: "Omar y Mónica listos para tomar el control de los mandos en esta hermosa aventura que comienza.",
                 placeholder: "Pilotos de Santiago"
             }
         ],
         parentsTitle: "Pilotos al Mando",
-        parentsSubtitle: "Omar y Monica",
+        parentsSubtitle: "Omar y Mónica",
         parentsPhotosTitle: "Nuestra Gran Aventura",
         parentsPhotosCaption: "El amor es nuestro combustible y la llegada de Santiago es nuestro destino más hermoso. Estamos felices de emprender este viaje contigo.",
         rsvp: {
@@ -2892,7 +2892,7 @@ const invitationContent = {
             },
             {
                 title: "The Commanders",
-                caption: "Monica and Omar ready to take control of the cockpit in this beautiful adventure.",
+                caption: "Omar and Monica ready to take control of the cockpit in this beautiful adventure.",
                 placeholder: "Santiago's Pilots"
             }
         ],
@@ -3642,7 +3642,7 @@ function ParentsSection({ locale }) {
                         className: "relative aspect-square flex items-center justify-center rounded-[2rem] border border-sky-100/40 shadow-md overflow-hidden bg-sky-50",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
                             src: "/images/omarymona.jpeg",
-                            alt: "Mónica y Omar",
+                            alt: "Omar y Mónica",
                             className: "w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                         }, void 0, false, {
                             fileName: "[project]/src/features/invitation/sections/parents-section.tsx",
@@ -4731,14 +4731,14 @@ function RSVPSection({ locale }) {
         const displayName = name.trim() || content.rsvp.defaultFamily;
         const typeLabel = confirmType === "individual" ? locale === "es" ? "Pasajero Individual" : "Single Passenger" : locale === "es" ? "Grupo Familiar" : "Family Group";
         if (locale === "es") {
-            let msg = `✈️ *¡Hola Capitanes Mónica y Omar!*\n\nMe hace muy feliz confirmar mi boleto de abordaje para el Vuelo de Santiago 🎫☁️\n\n✨ *Detalles del Vuelo:*\n• Categoría: ${typeLabel}\n• Nombre del Pasajero: ${displayName}\n• Asientos Reservados: ${guestCount} ${guestCount === 1 ? "asiento" : "asientos"}`;
+            let msg = `✈️ *¡Hola Capitanes Omar y Mónica!*\n\nMe hace muy feliz confirmar mi boleto de abordaje para el Vuelo de Santiago 🎫☁️\n\n✨ *Detalles del Vuelo:*\n• Categoría: ${typeLabel}\n• Nombre del Pasajero: ${displayName}\n• Asientos Reservados: ${guestCount} ${guestCount === 1 ? "asiento" : "asientos"}`;
             if (customNote.trim()) {
                 msg += `\n\n💌 *Mensaje para la bitácora:*\n"${customNote.trim()}"`;
             }
             msg += `\n\n¡Qué emoción abordar pronto para festejar juntos! 🛫💙`;
             return msg;
         } else {
-            let msg = `✈️ *Hello Captains Monica and Omar!*\n\nI am thrilled to confirm my boarding pass for Santiago's Flight 🎫☁️\n\n✨ *Flight Details:*\n• Category: ${typeLabel}\n• Passenger Name: ${displayName}\n• Seats Reserved: ${guestCount} ${guestCount === 1 ? "seat" : "seats"}`;
+            let msg = `✈️ *Hello Captains Omar and Monica!*\n\nI am thrilled to confirm my boarding pass for Santiago's Flight 🎫☁️\n\n✨ *Flight Details:*\n• Category: ${typeLabel}\n• Passenger Name: ${displayName}\n• Seats Reserved: ${guestCount} ${guestCount === 1 ? "seat" : "seats"}`;
             if (customNote.trim()) {
                 msg += `\n\n💌 *Message for the logbook:*\n"${customNote.trim()}"`;
             }

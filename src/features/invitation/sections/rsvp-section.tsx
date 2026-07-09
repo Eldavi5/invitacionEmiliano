@@ -45,14 +45,14 @@ export function RSVPSection({ locale }: RSVPSectionProps) {
       : (locale === "es" ? "Grupo Familiar" : "Family Group");
 
     if (locale === "es") {
-      let msg = `✈️ *¡Hola Capitanes Mónica y Omar!*\n\nMe hace muy feliz confirmar mi boleto de abordaje para el Vuelo de Santiago 🎫☁️\n\n✨ *Detalles del Vuelo:*\n• Categoría: ${typeLabel}\n• Nombre del Pasajero: ${displayName}\n• Asientos Reservados: ${guestCount} ${guestCount === 1 ? "asiento" : "asientos"}`;
+      let msg = `✈️ *¡Hola Capitanes Omar y Mónica!*\n\nMe hace muy feliz confirmar mi boleto de abordaje para el Vuelo de Santiago 🎫☁️\n\n✨ *Detalles del Vuelo:*\n• Categoría: ${typeLabel}\n• Nombre del Pasajero: ${displayName}\n• Asientos Reservados: ${guestCount} ${guestCount === 1 ? "asiento" : "asientos"}`;
       if (customNote.trim()) {
         msg += `\n\n💌 *Mensaje para la bitácora:*\n"${customNote.trim()}"`;
       }
       msg += `\n\n¡Qué emoción abordar pronto para festejar juntos! 🛫💙`;
       return msg;
     } else {
-      let msg = `✈️ *Hello Captains Monica and Omar!*\n\nI am thrilled to confirm my boarding pass for Santiago's Flight 🎫☁️\n\n✨ *Flight Details:*\n• Category: ${typeLabel}\n• Passenger Name: ${displayName}\n• Seats Reserved: ${guestCount} ${guestCount === 1 ? "seat" : "seats"}`;
+      let msg = `✈️ *Hello Captains Omar and Monica!*\n\nI am thrilled to confirm my boarding pass for Santiago's Flight 🎫☁️\n\n✨ *Flight Details:*\n• Category: ${typeLabel}\n• Passenger Name: ${displayName}\n• Seats Reserved: ${guestCount} ${guestCount === 1 ? "seat" : "seats"}`;
       if (customNote.trim()) {
         msg += `\n\n💌 *Message for the logbook:*\n"${customNote.trim()}"`;
       }

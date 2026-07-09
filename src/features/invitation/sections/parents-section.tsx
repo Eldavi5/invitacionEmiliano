@@ -26,7 +26,7 @@ export function ParentsSection({ locale }: ParentsSectionProps) {
         <div className="relative aspect-square flex items-center justify-center rounded-[2rem] border border-sky-100/40 shadow-md overflow-hidden bg-sky-50">
           <img
             src="/images/omarymona.jpeg"
-            alt="Mónica y Omar"
+            alt="Omar y Mónica"
             className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
           />
         </div>

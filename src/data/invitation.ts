@@ -91,12 +91,12 @@ export const invitationContent = {
       },
       {
         title: "Los Comandantes",
-        caption: "Mónica y Omar listos para tomar el control de los mandos en esta hermosa aventura que comienza.",
+        caption: "Omar y Mónica listos para tomar el control de los mandos en esta hermosa aventura que comienza.",
         placeholder: "Pilotos de Santiago"
       }
     ],
     parentsTitle: "Pilotos al Mando",
-    parentsSubtitle: "Omar y Monica",
+    parentsSubtitle: "Omar y Mónica",
     parentsPhotosTitle: "Nuestra Gran Aventura",
     parentsPhotosCaption: "El amor es nuestro combustible y la llegada de Santiago es nuestro destino más hermoso. Estamos felices de emprender este viaje contigo.",
     rsvp: {
@@ -207,7 +207,7 @@ export const invitationContent = {
       },
       {
         title: "The Commanders",
-        caption: "Monica and Omar ready to take control of the cockpit in this beautiful adventure.",
+        caption: "Omar and Monica ready to take control of the cockpit in this beautiful adventure.",
         placeholder: "Santiago's Pilots"
       }
     ],
