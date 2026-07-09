@@ -55,7 +55,13 @@ export function MemoryCarousel({ locale }: MemoryCarouselProps) {
       title: content.photos[3].title,
       caption: content.photos[3].caption,
       tag: content.photos[3].placeholder,
-      illustration: <PilotsAirplane size={180} className="plane-float" style={{ animationDelay: "0.5s" }} />
+      illustration: (
+        <img
+          src="/images/papas.jpeg"
+          alt={content.photos[3].title}
+          className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+        />
+      )
     }
   ];
 
@@ -163,7 +169,7 @@ export function MemoryCarousel({ locale }: MemoryCarouselProps) {
                   <Plane className="h-3.5 w-3.5 text-sky-500 animate-pulse" />
                   {slide.tag}
                 </div>
-                {index === 0 || index === 1 ? (
+                {index === 0 || index === 1 || index === 3 ? (
                   <div className="absolute inset-0 w-full h-full">
                     {slide.illustration}
                   </div>

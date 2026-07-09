@@ -13,8 +13,8 @@ export const invitationContent = {
       dad: "Omar Barreto Resendiz"
     },
     event: {
-      date: "Sábado 1 de agosto de 2026",
-      time: "4:00 PM",
+      date: "Domingo 2 de agosto de 2026",
+      time: "5:00 PM",
       location: "1034 Lorlyn Cir, Batavia, IL 60510",
       mapsQuery: "1034 Lorlyn Cir, Batavia, IL 60510"
     },
@@ -96,7 +96,7 @@ export const invitationContent = {
       }
     ],
     parentsTitle: "Pilotos al Mando",
-    parentsSubtitle: "Capitanes: Mónica & Omar",
+    parentsSubtitle: "Omar y Monica",
     parentsPhotosTitle: "Nuestra Gran Aventura",
     parentsPhotosCaption: "El amor es nuestro combustible y la llegada de Santiago es nuestro destino más hermoso. Estamos felices de emprender este viaje contigo.",
     rsvp: {
@@ -129,8 +129,8 @@ export const invitationContent = {
       dad: "Omar Barreto Resendiz"
     },
     event: {
-      date: "Saturday, August 1, 2026",
-      time: "4:00 PM",
+      date: "Sunday, August 2, 2026",
+      time: "5:00 PM",
       location: "1034 Lorlyn Cir, Batavia, IL 60510",
       mapsQuery: "1034 Lorlyn Cir, Batavia, IL 60510"
     },
@@ -212,7 +212,7 @@ export const invitationContent = {
       }
     ],
     parentsTitle: "Pilots in Command",
-    parentsSubtitle: "Captains: Monica & Omar",
+    parentsSubtitle: "Omar and Monica",
     parentsPhotosTitle: "Our Great Adventure",
     parentsPhotosCaption: "Love is our fuel and Santiago's arrival is our most beautiful destination. We are happy to embark on this journey with you.",
     rsvp: {

@@ -22,9 +22,13 @@ export function ParentsSection({ locale }: ParentsSectionProps) {
       </div>
 
       <div className="grid gap-6 md:grid-cols-[0.8fr_1.2fr] items-center">
-        {/* Adorable Mom & Dad Airplane Illustration */}
-        <div className="relative aspect-square flex items-center justify-center rounded-[2rem] bg-gradient-to-b from-sky-50/50 to-white/90 border border-sky-100/40 p-4 shadow-[inset_0_2px_4px_rgba(56,189,248,0.03)] overflow-hidden">
-          <PilotsAirplane size={175} className="plane-float" />
+        {/* Real Mom & Dad Photo */}
+        <div className="relative aspect-square flex items-center justify-center rounded-[2rem] border border-sky-100/40 shadow-md overflow-hidden bg-sky-50">
+          <img
+            src="/images/omarymona.jpeg"
+            alt="Mónica y Omar"
+            className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+          />
         </div>
 
         {/* Text Area */}

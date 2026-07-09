@@ -2688,8 +2688,8 @@ const invitationContent = {
             dad: "Omar Barreto Resendiz"
         },
         event: {
-            date: "Sábado 1 de agosto de 2026",
-            time: "4:00 PM",
+            date: "Domingo 2 de agosto de 2026",
+            time: "5:00 PM",
             location: "1034 Lorlyn Cir, Batavia, IL 60510",
             mapsQuery: "1034 Lorlyn Cir, Batavia, IL 60510"
         },
@@ -2776,7 +2776,7 @@ const invitationContent = {
             }
         ],
         parentsTitle: "Pilotos al Mando",
-        parentsSubtitle: "Capitanes: Mónica & Omar",
+        parentsSubtitle: "Omar y Monica",
         parentsPhotosTitle: "Nuestra Gran Aventura",
         parentsPhotosCaption: "El amor es nuestro combustible y la llegada de Santiago es nuestro destino más hermoso. Estamos felices de emprender este viaje contigo.",
         rsvp: {
@@ -2809,8 +2809,8 @@ const invitationContent = {
             dad: "Omar Barreto Resendiz"
         },
         event: {
-            date: "Saturday, August 1, 2026",
-            time: "4:00 PM",
+            date: "Sunday, August 2, 2026",
+            time: "5:00 PM",
             location: "1034 Lorlyn Cir, Batavia, IL 60510",
             mapsQuery: "1034 Lorlyn Cir, Batavia, IL 60510"
         },
@@ -2897,7 +2897,7 @@ const invitationContent = {
             }
         ],
         parentsTitle: "Pilots in Command",
-        parentsSubtitle: "Captains: Monica & Omar",
+        parentsSubtitle: "Omar and Monica",
         parentsPhotosTitle: "Our Great Adventure",
         parentsPhotosCaption: "Love is our fuel and Santiago's arrival is our most beautiful destination. We are happy to embark on this journey with you.",
         rsvp: {
@@ -2954,7 +2954,7 @@ function getCountdownParts(targetDate) {
 }
 function CountdownCard({ locale }) {
     const content = __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$data$2f$invitation$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["invitationContent"][locale];
-    const targetDate = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useMemo"])(()=>new Date("2026-08-01T16:00:00"), []);
+    const targetDate = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useMemo"])(()=>new Date("2026-08-02T17:00:00"), []);
     const [mounted, setMounted] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
     const [countdown, setCountdown] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])({
         days: 0,
@@ -3596,8 +3596,6 @@ __turbopack_context__.s([
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$data$2f$invitation$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/data/invitation.ts [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$heart$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Heart$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/heart.mjs [app-ssr] (ecmascript) <export default as Heart>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$invitation$2f$components$2f$airplane$2d$illustrations$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/features/invitation/components/airplane-illustrations.tsx [app-ssr] (ecmascript)");
-;
 ;
 ;
 ;
@@ -3641,10 +3639,11 @@ function ParentsSection({ locale }) {
                 className: "grid gap-6 md:grid-cols-[0.8fr_1.2fr] items-center",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "relative aspect-square flex items-center justify-center rounded-[2rem] bg-gradient-to-b from-sky-50/50 to-white/90 border border-sky-100/40 p-4 shadow-[inset_0_2px_4px_rgba(56,189,248,0.03)] overflow-hidden",
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$invitation$2f$components$2f$airplane$2d$illustrations$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["PilotsAirplane"], {
-                            size: 175,
-                            className: "plane-float"
+                        className: "relative aspect-square flex items-center justify-center rounded-[2rem] border border-sky-100/40 shadow-md overflow-hidden bg-sky-50",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                            src: "/images/omarymona.jpeg",
+                            alt: "Mónica y Omar",
+                            className: "w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                         }, void 0, false, {
                             fileName: "[project]/src/features/invitation/sections/parents-section.tsx",
                             lineNumber: 27,
@@ -3666,7 +3665,7 @@ function ParentsSection({ locale }) {
                                         children: content.parentsPhotosTitle
                                     }, void 0, false, {
                                         fileName: "[project]/src/features/invitation/sections/parents-section.tsx",
-                                        lineNumber: 33,
+                                        lineNumber: 37,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -3674,13 +3673,13 @@ function ParentsSection({ locale }) {
                                         children: content.parentsSubtitle
                                     }, void 0, false, {
                                         fileName: "[project]/src/features/invitation/sections/parents-section.tsx",
-                                        lineNumber: 36,
+                                        lineNumber: 40,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/features/invitation/sections/parents-section.tsx",
-                                lineNumber: 32,
+                                lineNumber: 36,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3688,7 +3687,7 @@ function ParentsSection({ locale }) {
                                 children: content.parentsPhotosCaption
                             }, void 0, false, {
                                 fileName: "[project]/src/features/invitation/sections/parents-section.tsx",
-                                lineNumber: 41,
+                                lineNumber: 45,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3702,14 +3701,14 @@ function ParentsSection({ locale }) {
                                                 children: "✦"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/features/invitation/sections/parents-section.tsx",
-                                                lineNumber: 48,
+                                                lineNumber: 52,
                                                 columnNumber: 15
                                             }, this),
                                             content.phraseTwo
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/features/invitation/sections/parents-section.tsx",
-                                        lineNumber: 47,
+                                        lineNumber: 51,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3720,26 +3719,26 @@ function ParentsSection({ locale }) {
                                                 children: "✦"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/features/invitation/sections/parents-section.tsx",
-                                                lineNumber: 52,
+                                                lineNumber: 56,
                                                 columnNumber: 15
                                             }, this),
                                             content.phraseThree
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/features/invitation/sections/parents-section.tsx",
-                                        lineNumber: 51,
+                                        lineNumber: 55,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/features/invitation/sections/parents-section.tsx",
-                                lineNumber: 46,
+                                lineNumber: 50,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/features/invitation/sections/parents-section.tsx",
-                        lineNumber: 31,
+                        lineNumber: 35,
                         columnNumber: 9
                     }, this)
                 ]
@@ -4421,16 +4420,14 @@ function MemoryCarousel({ locale }) {
             title: content.photos[3].title,
             caption: content.photos[3].caption,
             tag: content.photos[3].placeholder,
-            illustration: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$invitation$2f$components$2f$airplane$2d$illustrations$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["PilotsAirplane"], {
-                size: 180,
-                className: "plane-float",
-                style: {
-                    animationDelay: "0.5s"
-                }
+            illustration: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                src: "/images/papas.jpeg",
+                alt: content.photos[3].title,
+                className: "w-full h-full object-cover transition-transform duration-500 hover:scale-105"
             }, void 0, false, {
                 fileName: "[project]/src/features/invitation/components/memory-carousel.tsx",
-                lineNumber: 58,
-                columnNumber: 21
+                lineNumber: 59,
+                columnNumber: 9
             }, this)
         }
     ];
@@ -4489,7 +4486,7 @@ function MemoryCarousel({ locale }) {
                                 children: content.photosIntro
                             }, void 0, false, {
                                 fileName: "[project]/src/features/invitation/components/memory-carousel.tsx",
-                                lineNumber: 116,
+                                lineNumber: 122,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -4497,13 +4494,13 @@ function MemoryCarousel({ locale }) {
                                 children: content.photosTitle
                             }, void 0, false, {
                                 fileName: "[project]/src/features/invitation/components/memory-carousel.tsx",
-                                lineNumber: 119,
+                                lineNumber: 125,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/features/invitation/components/memory-carousel.tsx",
-                        lineNumber: 115,
+                        lineNumber: 121,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -4511,13 +4508,13 @@ function MemoryCarousel({ locale }) {
                         children: locale === "es" ? "Desliza para ver la bitácora de vuelo y los preparativos celestiales que darán la bienvenida a Santiago." : "Swipe to view the flight log and celestial preparations welcoming Santiago."
                     }, void 0, false, {
                         fileName: "[project]/src/features/invitation/components/memory-carousel.tsx",
-                        lineNumber: 123,
+                        lineNumber: 129,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/features/invitation/components/memory-carousel.tsx",
-                lineNumber: 114,
+                lineNumber: 120,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4531,12 +4528,12 @@ function MemoryCarousel({ locale }) {
                             className: "h-6 w-6"
                         }, void 0, false, {
                             fileName: "[project]/src/features/invitation/components/memory-carousel.tsx",
-                            lineNumber: 137,
+                            lineNumber: 143,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/features/invitation/components/memory-carousel.tsx",
-                        lineNumber: 132,
+                        lineNumber: 138,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -4547,12 +4544,12 @@ function MemoryCarousel({ locale }) {
                             className: "h-6 w-6"
                         }, void 0, false, {
                             fileName: "[project]/src/features/invitation/components/memory-carousel.tsx",
-                            lineNumber: 146,
+                            lineNumber: 152,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/features/invitation/components/memory-carousel.tsx",
-                        lineNumber: 141,
+                        lineNumber: 147,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4572,35 +4569,35 @@ function MemoryCarousel({ locale }) {
                                                         className: "h-3.5 w-3.5 text-sky-500 animate-pulse"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/features/invitation/components/memory-carousel.tsx",
-                                                        lineNumber: 163,
+                                                        lineNumber: 169,
                                                         columnNumber: 19
                                                     }, this),
                                                     slide.tag
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/features/invitation/components/memory-carousel.tsx",
-                                                lineNumber: 162,
+                                                lineNumber: 168,
                                                 columnNumber: 17
                                             }, this),
-                                            index === 0 || index === 1 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            index === 0 || index === 1 || index === 3 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "absolute inset-0 w-full h-full",
                                                 children: slide.illustration
                                             }, void 0, false, {
                                                 fileName: "[project]/src/features/invitation/components/memory-carousel.tsx",
-                                                lineNumber: 167,
+                                                lineNumber: 173,
                                                 columnNumber: 19
                                             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "relative p-4",
                                                 children: slide.illustration
                                             }, void 0, false, {
                                                 fileName: "[project]/src/features/invitation/components/memory-carousel.tsx",
-                                                lineNumber: 171,
+                                                lineNumber: 177,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/features/invitation/components/memory-carousel.tsx",
-                                        lineNumber: 161,
+                                        lineNumber: 167,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4611,7 +4608,7 @@ function MemoryCarousel({ locale }) {
                                                 children: slide.title
                                             }, void 0, false, {
                                                 fileName: "[project]/src/features/invitation/components/memory-carousel.tsx",
-                                                lineNumber: 179,
+                                                lineNumber: 185,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -4619,24 +4616,24 @@ function MemoryCarousel({ locale }) {
                                                 children: slide.caption
                                             }, void 0, false, {
                                                 fileName: "[project]/src/features/invitation/components/memory-carousel.tsx",
-                                                lineNumber: 182,
+                                                lineNumber: 188,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/features/invitation/components/memory-carousel.tsx",
-                                        lineNumber: 178,
+                                        lineNumber: 184,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, index, true, {
                                 fileName: "[project]/src/features/invitation/components/memory-carousel.tsx",
-                                lineNumber: 156,
+                                lineNumber: 162,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/src/features/invitation/components/memory-carousel.tsx",
-                        lineNumber: 150,
+                        lineNumber: 156,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4647,24 +4644,24 @@ function MemoryCarousel({ locale }) {
                                 "aria-label": `Ir a escala ${index + 1}`
                             }, index, false, {
                                 fileName: "[project]/src/features/invitation/components/memory-carousel.tsx",
-                                lineNumber: 193,
+                                lineNumber: 199,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/src/features/invitation/components/memory-carousel.tsx",
-                        lineNumber: 191,
+                        lineNumber: 197,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/features/invitation/components/memory-carousel.tsx",
-                lineNumber: 130,
+                lineNumber: 136,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/features/invitation/components/memory-carousel.tsx",
-        lineNumber: 113,
+        lineNumber: 119,
         columnNumber: 5
     }, this);
 }
