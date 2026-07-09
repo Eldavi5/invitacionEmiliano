@@ -2766,7 +2766,7 @@ const invitationContent = {
             },
             {
                 title: "Estilo de Altura",
-                caption: "Nuestra mesa de regalos y los detalles celestiales para consentir a Santiago en su despegue de vida.",
+                caption: "¡Volando alto en el cielo de la ilusión! Cada pequeño detalle está preparado para que el viaje de Santiago sea suave y lleno de estrellas.",
                 placeholder: "Detalles del Despegue"
             },
             {
@@ -2887,7 +2887,7 @@ const invitationContent = {
             },
             {
                 title: "High-Flying Style",
-                caption: "Our gift registry and celestial details to pamper Santiago on his takeoff of life.",
+                caption: "Flying high in the sky of hope! Every little detail is prepared to ensure Santiago's journey is smooth and filled with stars.",
                 placeholder: "Takeoff Highlights"
             },
             {
@@ -4560,7 +4560,7 @@ function MemoryCarousel({ locale }) {
                                 className: "w-full shrink-0 snap-start snap-always p-6 md:p-8 flex flex-col items-center text-center",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "relative w-full max-w-sm aspect-[4/3.2] flex items-center justify-center rounded-[1.75rem] bg-gradient-to-b from-sky-50/50 to-white/95 border border-sky-100/40 shadow-[inset_0_2px_4px_rgba(56,189,248,0.03)] overflow-hidden",
+                                        className: `relative w-full max-w-sm aspect-[4/3.2] flex items-center justify-center rounded-[1.75rem] bg-gradient-to-b from-sky-50/50 to-white/95 border border-sky-100/40 shadow-[inset_0_2px_4px_rgba(56,189,248,0.03)] ${index === 0 || index === 1 || index === 3 ? "overflow-hidden" : "overflow-hidden"}`,
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "absolute top-2 left-2 z-10 flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/90 border border-sky-100/30 text-[0.62rem] font-bold text-sky-700 tracking-wider uppercase shadow-sm",

@@ -6,28 +6,34 @@ Hemos completado la transformación total de la invitación, migrando de la tem�
 
 ## Cambios Realizados
 
-### 1. Cambio Global de Orden de Nombres: "Omar y Mónica" (¡Nuevo!)
+### 1. Nueva Frase para la Diapositiva "Estilo de Altura" (¡Nuevo!)
+- **Archivos modificados:**
+  - [invitation.ts](file:///Volumes/Mac/MacExterno/Documents/NewProyectMona/src/data/invitation.ts)
+- **Cambios:**
+  - Cambiamos la descripción de la tercera diapositiva ("Estilo de Altura") para desvincularla de la mesa de regalos y enfocarla puramente en los deseos de vuelo y amor:
+    - Español: `"¡Volando alto en el cielo de la ilusión! Cada pequeño detalle está preparado para que el viaje de Santiago sea suave y lleno de estrellas."`
+    - Inglés: `"Flying high in the sky of hope! Every little detail is prepared to ensure Santiago's journey is smooth and filled with stars."`
+
+### 2. Cambio Global de Orden de Nombres: "Omar y Mónica"
 - **Archivos modificados:**
   - [invitation.ts](file:///Volumes/Mac/MacExterno/Documents/NewProyectMona/src/data/invitation.ts)
   - [parents-section.tsx](file:///Volumes/Mac/MacExterno/Documents/NewProyectMona/src/features/invitation/sections/parents-section.tsx)
   - [rsvp-section.tsx](file:///Volumes/Mac/MacExterno/Documents/NewProyectMona/src/features/invitation/sections/rsvp-section.tsx)
 - **Cambios:**
   - **Textos y Subtítulos:** Modificamos el orden de los nombres a **"Omar y Mónica"** (en español) y **"Omar and Monica"** (en inglés) en la sección de *Pilotos al Mando* y en el pie de foto de la diapositiva de *Los Comandantes* en la galería.
-  - **Atributos de Accesibilidad:** Cambiamos el atributo `alt` de la foto de los padres a **"Omar y Mónica"** en la maquetación.
   - **Plantillas de WhatsApp (RSVP):** Actualizamos los textos predefinidos que se envían por WhatsApp al confirmar la asistencia:
     - Español: `✈️ *¡Hola Capitanes Omar y Mónica!*`
     - Inglés: `✈️ *Hello Captains Omar and Monica!*`
 
-### 2. Integración de Fotos de los Papás
+### 3. Integración de Fotos de los Papás
 - **Archivos modificados:**
   - [parents-section.tsx](file:///Volumes/Mac/MacExterno/Documents/NewProyectMona/src/features/invitation/sections/parents-section.tsx)
   - [memory-carousel.tsx](file:///Volumes/Mac/MacExterno/Documents/NewProyectMona/src/features/invitation/components/memory-carousel.tsx)
-  - [invitation.ts](file:///Volumes/Mac/MacExterno/Documents/NewProyectMona/src/data/invitation.ts)
 - **Cambios:**
   - **Pilotos al Mando (Sección de Padres):** Reemplazamos la ilustración animada por tu foto real `omarymona.jpeg`.
   - **Diapositiva "Los Comandantes" (Galería de Viajes):** Cargamos la foto real `papas.jpeg` en la cuarta diapositiva de la Bitácora del Co-Piloto a pantalla completa (*full-bleed*).
 
-### 3. Cambio de Fecha al 2 de Agosto de 2026 y Hora a las 5:00 PM
+### 4. Cambio de Fecha al 2 de Agosto de 2026 y Hora a las 5:00 PM
 - **Archivos modificados:**
   - [invitation.ts](file:///Volumes/Mac/MacExterno/Documents/NewProyectMona/src/data/invitation.ts)
   - [countdown-card.tsx](file:///Volumes/Mac/MacExterno/Documents/NewProyectMona/src/components/ui/countdown-card.tsx)
@@ -35,7 +41,7 @@ Hemos completado la transformación total de la invitación, migrando de la tem�
   - **Textos Visuales:** Modificamos la fecha a **"Domingo 2 de agosto de 2026"** a las **"5:00 PM"** (y en inglés *"Sunday, August 2, 2026"*).
   - **Sincronización del Contador:** Desplazamos la fecha objetivo del temporizador de cuenta regresiva en `countdown-card.tsx` al **2026-08-02T17:00:00**, asegurando la precisión de días, horas y minutos restantes.
 
-### 4. Reset Off-Screen Sincronizado (Entrada Siempre por la Izquierda)
+### 5. Reset Off-Screen Sincronizado (Entrada Siempre por la Izquierda)
 - **Archivos modificados:**
   - [reveal.tsx](file:///Volumes/Mac/MacExterno/Documents/NewProyectMona/src/components/ui/reveal.tsx)
   - [globals.css](file:///Volumes/Mac/MacExterno/Documents/NewProyectMona/src/app/globals.css)
@@ -47,12 +53,12 @@ Hemos completado la transformación total de la invitación, migrando de la tem�
     4. En el archivo CSS, la clase `.is-idle` aplica una propiedad crítica: `transition: none !important;` y reubica la tarjeta instantáneamente a `-100vw`. Al no tener animación de regreso, el salto a la izquierda ocurre en 0 milisegundos de forma 100% invisible para el usuario.
   - Al regresar scroll, todas las tarjetas vuelven a entrar impecablemente **siempre desde la izquierda** y salen **siempre hacia la derecha**.
 
-### 5. Corrección del Detección de Intersección por Scroll
+### 6. Corrección del Detección de Intersección por Scroll
 - **Archivo modificado:** [reveal.tsx](file:///Volumes/Mac/MacExterno/Documents/NewProyectMona/src/components/ui/reveal.tsx)
 - **Cambios:**
   - **La Solución (Ancla Estática):** Dividimos la estructura de `<Reveal />` en un contenedor exterior de anclaje estático (`div ref={ref}`) que marca el espacio real de cada tarjeta, y un contenedor animado interior (`div className="scroll-reveal"`) que realiza el planeo.
 
-### 6. Animación de Pancarta Remolcada de Izquierda a Derecha
+### 7. Animación de Pancarta Remolcada de Izquierda a Derecha
 - **Archivos modificados:**
   - [reveal.tsx](file:///Volumes/Mac/MacExterno/Documents/NewProyectMona/src/components/ui/reveal.tsx)
   - [globals.css](file:///Volumes/Mac/MacExterno/Documents/NewProyectMona/src/app/globals.css)
@@ -61,32 +67,32 @@ Hemos completado la transformación total de la invitación, migrando de la tem�
   - **Llegada (de Izquierda a Centro):** Entran planeando desde el extremo izquierdo de la pantalla (`translateX(-100vw)`), asentándose en el centro.
   - **Despegue (de Centro a Derecha):** Al salir, se van volando hacia el extremo derecho de la pantalla (`translateX(100vw)`).
 
-### 7. Aviones de Fondo Más Reales
+### 8. Aviones de Fondo Más Reales
 - **Archivo modificado:** [sky-background.tsx](file:///Volumes/Mac/MacExterno/Documents/NewProyectMona/src/components/ui/sky-background.tsx)
 - **Cambios:**
   - Rediseñamos por completo el avión de fondo (`RealisticAirliner`). Cambiamos el vector sencillo por un **avión comercial de pasajeros moderno y altamente detallado**, el cual incluye turbinas, ventanillas y alas en flecha estilizadas.
 
-### 8. Ocultamiento de Punto Rojo y Tarjeta de Google Maps
+### 9. Ocultamiento de Punto Rojo y Tarjeta de Google Maps
 - **Archivo modificado:** [event-section.tsx](file:///Volumes/Mac/MacExterno/Documents/NewProyectMona/src/features/invitation/sections/event-section.tsx)
 - **Cambios:**
   - **Recorte de Tarjeta ("Maps"):** Aplicamos un marco de recorte al iframe de Google Maps usando posicionamiento absoluto negativo.
   - **Ocultamiento del Punto Rojo:** Para ocultar el pin rojo genérico de Google, superpusimos un **Punto de Aterrizaje de Radar (Landing Pad)** blanco y azul en el centro exacto del mapa.
 
-### 9. Integración de Mapa Real de Google Maps con Pin de Avión
+### 10. Integración de Mapa Real de Google Maps con Pin de Avión
 - **Archivos modificados:**
   - [event-section.tsx](file:///Volumes/Mac/MacExterno/Documents/NewProyectMona/src/features/invitation/sections/event-section.tsx)
   - [invitation.ts](file:///Volumes/Mac/MacExterno/Documents/NewProyectMona/src/data/invitation.ts)
 - **Cambios:**
   - **Ubicación Real:** Actualizamos la dirección a la del mapa compartido: `"1034 Lorlyn Cir, Batavia, IL 60510"`.
 
-### 10. Reproductor de Latidos del Bebé
+### 11. Reproductor de Latidos del Bebé
 - **Archivo creado:** [heartbeat-section.tsx](file:///Volumes/Mac/MacExterno/Documents/NewProyectMona/src/features/invitation/sections/heartbeat-section.tsx)
 - **Cambios:**
   - Creamos el apartado **¿Quieres escuchar mi corazón? / El Latido de Mi Vida**.
   - **Modo Audio ("Solo Escucha"):** Permite reproducir las dos grabaciones reales del bebé (`corazon.opus` y `corazon2.opus`).
   - **Modo Video ("Mira cómo vivo"):** Un radar de amor simulado que reproduce el video del ultrasonido latiente (`videocorazon.mp4`).
 
-### 11. Integración de Fotos Reales en la Bitácora
+### 12. Integración de Fotos Reales en la Bitácora
 - **Archivo modificado:** [memory-carousel.tsx](file:///Volumes/Mac/MacExterno/Documents/NewProyectMona/src/features/invitation/components/memory-carousel.tsx)
 - **Cambios:**
   - **Despegue / Radar de Amor (Diapositiva 1):** Cargamos la foto real de tu bebé (`fotodelbebe.jpeg`).
@@ -100,11 +106,11 @@ Hemos compilado el proyecto localmente mediante `npm run build`:
 ```bash
 ▲ Next.js 16.2.10 (Turbopack)
 Creating an optimized production build ...
-✓ Compiled successfully in 901ms
+✓ Compiled successfully in 793ms
 Running TypeScript ...
-Finished TypeScript in 1158ms ...
+Finished TypeScript in 1091ms ...
 Generating static pages (3/3) ...
-✓ Generating static pages in 160ms
+✓ Generating static pages in 131ms
 Finalizing page optimization ...
 Route (app)             Size
 ┌ ○ /                   92.4 kB

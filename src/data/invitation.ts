@@ -86,7 +86,7 @@ export const invitationContent = {
       },
       {
         title: "Estilo de Altura",
-        caption: "Nuestra mesa de regalos y los detalles celestiales para consentir a Santiago en su despegue de vida.",
+        caption: "¡Volando alto en el cielo de la ilusión! Cada pequeño detalle está preparado para que el viaje de Santiago sea suave y lleno de estrellas.",
         placeholder: "Detalles del Despegue"
       },
       {
@@ -202,7 +202,7 @@ export const invitationContent = {
       },
       {
         title: "High-Flying Style",
-        caption: "Our gift registry and celestial details to pamper Santiago on his takeoff of life.",
+        caption: "Flying high in the sky of hope! Every little detail is prepared to ensure Santiago's journey is smooth and filled with stars.",
         placeholder: "Takeoff Highlights"
       },
       {

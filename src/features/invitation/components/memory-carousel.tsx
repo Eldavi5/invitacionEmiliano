@@ -164,7 +164,7 @@ export function MemoryCarousel({ locale }: MemoryCarouselProps) {
               className="w-full shrink-0 snap-start snap-always p-6 md:p-8 flex flex-col items-center text-center"
             >
               {/* Image / Illustration Container with glass style */}
-              <div className="relative w-full max-w-sm aspect-[4/3.2] flex items-center justify-center rounded-[1.75rem] bg-gradient-to-b from-sky-50/50 to-white/95 border border-sky-100/40 shadow-[inset_0_2px_4px_rgba(56,189,248,0.03)] overflow-hidden">
+              <div className={`relative w-full max-w-sm aspect-[4/3.2] flex items-center justify-center rounded-[1.75rem] bg-gradient-to-b from-sky-50/50 to-white/95 border border-sky-100/40 shadow-[inset_0_2px_4px_rgba(56,189,248,0.03)] ${index === 0 || index === 1 || index === 3 ? "overflow-hidden" : "overflow-hidden"}`}>
                 <div className="absolute top-2 left-2 z-10 flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/90 border border-sky-100/30 text-[0.62rem] font-bold text-sky-700 tracking-wider uppercase shadow-sm">
                   <Plane className="h-3.5 w-3.5 text-sky-500 animate-pulse" />
                   {slide.tag}
