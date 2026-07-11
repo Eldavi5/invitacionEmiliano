@@ -928,13 +928,20 @@ function Reveal({ children, className = "", delayClassName = "" }) {
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
                     src: "/images/jefe_logo.png",
                     alt: "Jefe Emiliano",
-                    className: "absolute -top-7 right-6 z-30 w-12 h-16 object-contain pointer-events-none drop-shadow-[0_6px_12px_rgba(2,132,199,0.15)]"
+                    className: "absolute -top-7 right-2 sm:right-6 z-0 sm:z-30 w-10 h-14 sm:w-12 sm:h-16 object-contain pointer-events-none opacity-70 sm:opacity-100 drop-shadow-[0_6px_12px_rgba(2,132,199,0.15)]"
                 }, void 0, false, {
                     fileName: "[project]/src/components/ui/reveal.tsx",
                     lineNumber: 32,
                     columnNumber: 9
                 }, this),
-                children
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "relative z-10 w-full",
+                    children: children
+                }, void 0, false, {
+                    fileName: "[project]/src/components/ui/reveal.tsx",
+                    lineNumber: 37,
+                    columnNumber: 9
+                }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/ui/reveal.tsx",
@@ -1188,17 +1195,17 @@ function CountdownCard() {
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
                     src: "/images/bebe_countdown_final.png",
                     alt: "Jefe Emiliano recargado",
-                    className: "absolute -left-10 -top-12 md:-left-12 md:-top-14 z-10 w-22 md:w-26 object-contain pointer-events-none drop-shadow-[0_6px_12px_rgba(2,132,199,0.15)]"
+                    className: "absolute -left-8 -top-10 sm:-left-10 sm:-top-12 md:-left-12 md:-top-14 z-10 w-20 sm:w-24 md:w-28 object-contain pointer-events-none drop-shadow-[0_6px_12px_rgba(2,132,199,0.15)]"
                 }, void 0, false, {
                     fileName: "[project]/src/components/ui/countdown-card.tsx",
                     lineNumber: 52,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "rounded-3xl glass-card-blue p-4 pl-14 pr-6 text-center shadow-md border border-white/80 animate-pulse",
+                    className: "rounded-3xl glass-card-blue p-4 pl-16 pr-5 sm:pl-20 text-center shadow-md border border-white/80 animate-pulse",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "text-[0.62rem] font-bold uppercase tracking-[0.35em] text-sky-700/60",
+                            className: "text-[0.62rem] sm:text-[0.68rem] font-bold uppercase tracking-[0.25em] sm:tracking-[0.35em] text-sky-700/60",
                             children: content.countdown.title
                         }, void 0, false, {
                             fileName: "[project]/src/components/ui/countdown-card.tsx",
@@ -1206,7 +1213,7 @@ function CountdownCard() {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "mt-1 text-[0.6rem] font-semibold uppercase tracking-[0.25em] text-slate-400",
+                            className: "mt-1 text-[0.58rem] sm:text-[0.62rem] font-semibold uppercase tracking-[0.18em] sm:tracking-[0.25em] text-slate-400",
                             children: content.countdown.subtitle
                         }, void 0, false, {
                             fileName: "[project]/src/components/ui/countdown-card.tsx",
@@ -1214,14 +1221,14 @@ function CountdownCard() {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "mt-3 grid grid-cols-4 gap-2",
+                            className: "mt-3 grid grid-cols-4 gap-1.5 sm:gap-2",
                             children: Array.from({
                                 length: 4
                             }).map((_, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "rounded-2xl bg-white/50 p-2 shadow-sm border border-sky-100/10",
+                                    className: "rounded-2xl bg-white/50 p-1.5 sm:p-2 shadow-sm border border-sky-100/10 flex flex-col justify-center items-center",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: "text-lg font-black text-slate-300",
+                                            className: "text-base sm:text-lg font-black text-slate-300",
                                             children: "00"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/ui/countdown-card.tsx",
@@ -1265,17 +1272,17 @@ function CountdownCard() {
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
                 src: "/images/bebe_countdown_final.png",
                 alt: "Jefe Emiliano recargado",
-                className: "absolute -left-10 -top-12 md:-left-12 md:-top-14 z-10 w-22 md:w-26 object-contain pointer-events-none drop-shadow-[0_6px_12px_rgba(2,132,199,0.15)] animate-[pulse_4s_ease-in-out_infinite]"
+                className: "absolute -left-8 -top-10 sm:-left-10 sm:-top-12 md:-left-12 md:-top-14 z-10 w-20 sm:w-24 md:w-28 object-contain pointer-events-none drop-shadow-[0_6px_12px_rgba(2,132,199,0.15)] animate-[pulse_4s_ease-in-out_infinite]"
             }, void 0, false, {
                 fileName: "[project]/src/components/ui/countdown-card.tsx",
                 lineNumber: 81,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "rounded-3xl glass-card-blue p-4 pl-14 pr-6 text-center shadow-[0_12px_45px_-10px_rgba(125,211,252,0.14)] border border-white/80 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_20px_50px_rgba(125,211,252,0.22)]",
+                className: "rounded-3xl glass-card-blue p-4 pl-16 pr-5 sm:pl-20 text-center shadow-[0_12px_45px_-10px_rgba(125,211,252,0.14)] border border-white/80 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_20px_50px_rgba(125,211,252,0.22)]",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        className: "text-[0.65rem] font-bold uppercase tracking-[0.35em] text-sky-700",
+                        className: "text-[0.62rem] sm:text-[0.68rem] font-bold uppercase tracking-[0.25em] sm:tracking-[0.35em] text-sky-700",
                         children: content.countdown.title
                     }, void 0, false, {
                         fileName: "[project]/src/components/ui/countdown-card.tsx",
@@ -1283,7 +1290,7 @@ function CountdownCard() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        className: "mt-0.5 text-[0.62rem] font-semibold uppercase tracking-[0.25em] text-slate-500",
+                        className: "mt-0.5 text-[0.58rem] sm:text-[0.62rem] font-semibold uppercase tracking-[0.18em] sm:tracking-[0.25em] text-slate-500",
                         children: content.countdown.subtitle
                     }, void 0, false, {
                         fileName: "[project]/src/components/ui/countdown-card.tsx",
@@ -1291,12 +1298,12 @@ function CountdownCard() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "mt-3 grid grid-cols-4 gap-2",
+                        className: "mt-3 grid grid-cols-4 gap-1.5 sm:gap-2",
                         children: items.map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "rounded-2xl bg-white/70 p-2 shadow-sm border border-white/80",
+                                className: "rounded-2xl bg-white/70 p-1.5 sm:p-2 shadow-sm border border-white/80 flex flex-col justify-center items-center",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "text-lg font-black text-slate-800 leading-tight",
+                                        className: "text-base sm:text-lg font-black text-slate-800 leading-tight",
                                         children: String(item.value).padStart(2, "0")
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/ui/countdown-card.tsx",
@@ -1304,7 +1311,7 @@ function CountdownCard() {
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "text-[0.62rem] font-bold uppercase tracking-[0.18em] text-sky-700 mt-0.5",
+                                        className: "text-[0.48rem] xs:text-[0.55rem] sm:text-[0.62rem] font-bold uppercase tracking-tight xs:tracking-normal sm:tracking-[0.18em] text-sky-700 mt-0.5 whitespace-nowrap",
                                         children: item.label
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/ui/countdown-card.tsx",
@@ -4608,57 +4615,50 @@ function InvitationPage() {
                     }, this),
                     hasStarted && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         onClick: handleEnterInvitation,
-                        className: "absolute inset-0 bg-transparent flex flex-col items-center justify-between py-10 px-4 cursor-pointer select-none",
+                        className: "absolute inset-0 bg-transparent cursor-pointer select-none z-20",
                         children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "w-full flex justify-end",
-                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                    type: "button",
-                                    className: "rounded-full bg-black/40 border border-white/20 px-4 py-2 text-[0.65rem] font-bold uppercase tracking-widest text-white backdrop-blur hover:bg-black/60 transition active:scale-95",
-                                    children: "Omitir Teaser"
-                                }, void 0, false, {
-                                    fileName: "[project]/src/features/invitation/invitation-page.tsx",
-                                    lineNumber: 123,
-                                    columnNumber: 17
-                                }, this)
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                type: "button",
+                                className: "absolute top-6 right-6 rounded-full bg-black/40 border border-white/20 px-4 py-2 text-[0.65rem] font-bold uppercase tracking-widest text-white backdrop-blur hover:bg-black/60 transition active:scale-95 z-30",
+                                children: "Omitir Teaser"
                             }, void 0, false, {
                                 fileName: "[project]/src/features/invitation/invitation-page.tsx",
                                 lineNumber: 122,
                                 columnNumber: 15
                             }, this),
                             videoEnded && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "w-full max-w-xs rounded-2xl bg-black/50 border border-white/10 p-5 text-center backdrop-blur-md shadow-2xl animate-[bounce_2s_infinite]",
+                                className: "absolute bottom-10 left-1/2 -translate-x-1/2 w-full max-w-[280px] rounded-2xl bg-black/60 border border-white/15 p-4 text-center backdrop-blur-md shadow-2xl animate-[bounce_2s_infinite] z-30",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "text-xs font-bold uppercase tracking-widest text-sky-400",
+                                        className: "text-[0.68rem] font-bold uppercase tracking-widest text-sky-400",
                                         children: "Junta Directiva Lista"
                                     }, void 0, false, {
                                         fileName: "[project]/src/features/invitation/invitation-page.tsx",
-                                        lineNumber: 134,
+                                        lineNumber: 132,
                                         columnNumber: 19
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                         type: "button",
-                                        className: "mt-3 inline-flex w-full items-center justify-center gap-1.5 rounded-xl bg-white px-5 py-3 font-bold text-slate-900 text-xs tracking-wider uppercase transition hover:scale-105 active:scale-95",
+                                        className: "mt-2.5 inline-flex w-full items-center justify-center gap-1.5 rounded-xl bg-white px-5 py-3 font-bold text-slate-900 text-xs tracking-wider uppercase transition hover:scale-105 active:scale-95 cursor-pointer",
                                         children: [
                                             "Ver Invitación",
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$right$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronRight$3e$__["ChevronRight"], {
                                                 className: "h-4.5 w-4.5"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/features/invitation/invitation-page.tsx",
-                                                lineNumber: 142,
+                                                lineNumber: 140,
                                                 columnNumber: 21
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/features/invitation/invitation-page.tsx",
-                                        lineNumber: 137,
+                                        lineNumber: 135,
                                         columnNumber: 19
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/features/invitation/invitation-page.tsx",
-                                lineNumber: 133,
+                                lineNumber: 131,
                                 columnNumber: 17
                             }, this)
                         ]
@@ -4675,7 +4675,7 @@ function InvitationPage() {
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$sky$2d$background$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["SkyBackground"], {}, void 0, false, {
                 fileName: "[project]/src/features/invitation/invitation-page.tsx",
-                lineNumber: 152,
+                lineNumber: 150,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$music$2d$dock$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["MusicDock"], {
@@ -4683,7 +4683,7 @@ function InvitationPage() {
                 description: content.music.description
             }, void 0, false, {
                 fileName: "[project]/src/features/invitation/invitation-page.tsx",
-                lineNumber: 155,
+                lineNumber: 153,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4692,90 +4692,90 @@ function InvitationPage() {
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$reveal$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Reveal"], {
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$invitation$2f$sections$2f$hero$2d$section$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["HeroSection"], {}, void 0, false, {
                             fileName: "[project]/src/features/invitation/invitation-page.tsx",
-                            lineNumber: 162,
+                            lineNumber: 160,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/features/invitation/invitation-page.tsx",
-                        lineNumber: 161,
+                        lineNumber: 159,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$reveal$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Reveal"], {
                         delayClassName: "reveal-delay-1",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$invitation$2f$sections$2f$event$2d$section$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["EventSection"], {}, void 0, false, {
                             fileName: "[project]/src/features/invitation/invitation-page.tsx",
-                            lineNumber: 167,
+                            lineNumber: 165,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/features/invitation/invitation-page.tsx",
-                        lineNumber: 166,
+                        lineNumber: 164,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$reveal$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Reveal"], {
                         delayClassName: "reveal-delay-2",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$invitation$2f$sections$2f$itinerary$2d$section$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ItinerarySection"], {}, void 0, false, {
                             fileName: "[project]/src/features/invitation/invitation-page.tsx",
-                            lineNumber: 172,
+                            lineNumber: 170,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/features/invitation/invitation-page.tsx",
-                        lineNumber: 171,
+                        lineNumber: 169,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$reveal$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Reveal"], {
                         delayClassName: "reveal-delay-1",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$invitation$2f$sections$2f$parents$2d$section$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ParentsSection"], {}, void 0, false, {
                             fileName: "[project]/src/features/invitation/invitation-page.tsx",
-                            lineNumber: 177,
+                            lineNumber: 175,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/features/invitation/invitation-page.tsx",
-                        lineNumber: 176,
+                        lineNumber: 174,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$reveal$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Reveal"], {
                         delayClassName: "reveal-delay-2",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$invitation$2f$sections$2f$dress$2d$and$2d$gifts$2d$section$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["DressAndGiftsSection"], {}, void 0, false, {
                             fileName: "[project]/src/features/invitation/invitation-page.tsx",
-                            lineNumber: 182,
+                            lineNumber: 180,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/features/invitation/invitation-page.tsx",
-                        lineNumber: 181,
+                        lineNumber: 179,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$reveal$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Reveal"], {
                         delayClassName: "reveal-delay-1",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$invitation$2f$components$2f$memory$2d$carousel$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["MemoryCarousel"], {}, void 0, false, {
                             fileName: "[project]/src/features/invitation/invitation-page.tsx",
-                            lineNumber: 187,
+                            lineNumber: 185,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/features/invitation/invitation-page.tsx",
-                        lineNumber: 186,
+                        lineNumber: 184,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$reveal$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Reveal"], {
                         delayClassName: "reveal-delay-2",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$features$2f$invitation$2f$sections$2f$rsvp$2d$section$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["RSVPSection"], {}, void 0, false, {
                             fileName: "[project]/src/features/invitation/invitation-page.tsx",
-                            lineNumber: 192,
+                            lineNumber: 190,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/features/invitation/invitation-page.tsx",
-                        lineNumber: 191,
+                        lineNumber: 189,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/features/invitation/invitation-page.tsx",
-                lineNumber: 158,
+                lineNumber: 156,
                 columnNumber: 7
             }, this)
         ]

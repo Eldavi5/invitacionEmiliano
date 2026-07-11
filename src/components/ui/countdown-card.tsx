@@ -52,20 +52,20 @@ export function CountdownCard() {
         <img
           src="/images/bebe_countdown_final.png"
           alt="Jefe Emiliano recargado"
-          className="absolute -left-10 -top-12 md:-left-12 md:-top-14 z-10 w-22 md:w-26 object-contain pointer-events-none drop-shadow-[0_6px_12px_rgba(2,132,199,0.15)]"
+          className="absolute -left-8 -top-10 sm:-left-10 sm:-top-12 md:-left-12 md:-top-14 z-10 w-20 sm:w-24 md:w-28 object-contain pointer-events-none drop-shadow-[0_6px_12px_rgba(2,132,199,0.15)]"
         />
 
-        <div className="rounded-3xl glass-card-blue p-4 pl-14 pr-6 text-center shadow-md border border-white/80 animate-pulse">
-          <p className="text-[0.62rem] font-bold uppercase tracking-[0.35em] text-sky-700/60">
+        <div className="rounded-3xl glass-card-blue p-4 pl-16 pr-5 sm:pl-20 text-center shadow-md border border-white/80 animate-pulse">
+          <p className="text-[0.62rem] sm:text-[0.68rem] font-bold uppercase tracking-[0.25em] sm:tracking-[0.35em] text-sky-700/60">
             {content.countdown.title}
           </p>
-          <p className="mt-1 text-[0.6rem] font-semibold uppercase tracking-[0.25em] text-slate-400">
+          <p className="mt-1 text-[0.58rem] sm:text-[0.62rem] font-semibold uppercase tracking-[0.18em] sm:tracking-[0.25em] text-slate-400">
             {content.countdown.subtitle}
           </p>
-          <div className="mt-3 grid grid-cols-4 gap-2">
+          <div className="mt-3 grid grid-cols-4 gap-1.5 sm:gap-2">
             {Array.from({ length: 4 }).map((_, i) => (
-              <div key={i} className="rounded-2xl bg-white/50 p-2 shadow-sm border border-sky-100/10">
-                <p className="text-lg font-black text-slate-300">00</p>
+              <div key={i} className="rounded-2xl bg-white/50 p-1.5 sm:p-2 shadow-sm border border-sky-100/10 flex flex-col justify-center items-center">
+                <p className="text-base sm:text-lg font-black text-slate-300">00</p>
                 <div className="mx-auto h-2 w-8 rounded bg-sky-200/40 mt-1" />
               </div>
             ))}
@@ -81,23 +81,23 @@ export function CountdownCard() {
       <img
         src="/images/bebe_countdown_final.png"
         alt="Jefe Emiliano recargado"
-        className="absolute -left-10 -top-12 md:-left-12 md:-top-14 z-10 w-22 md:w-26 object-contain pointer-events-none drop-shadow-[0_6px_12px_rgba(2,132,199,0.15)] animate-[pulse_4s_ease-in-out_infinite]"
+        className="absolute -left-8 -top-10 sm:-left-10 sm:-top-12 md:-left-12 md:-top-14 z-10 w-20 sm:w-24 md:w-28 object-contain pointer-events-none drop-shadow-[0_6px_12px_rgba(2,132,199,0.15)] animate-[pulse_4s_ease-in-out_infinite]"
       />
 
-      <div className="rounded-3xl glass-card-blue p-4 pl-14 pr-6 text-center shadow-[0_12px_45px_-10px_rgba(125,211,252,0.14)] border border-white/80 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_20px_50px_rgba(125,211,252,0.22)]">
-        <p className="text-[0.65rem] font-bold uppercase tracking-[0.35em] text-sky-700">
+      <div className="rounded-3xl glass-card-blue p-4 pl-16 pr-5 sm:pl-20 text-center shadow-[0_12px_45px_-10px_rgba(125,211,252,0.14)] border border-white/80 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_20px_50px_rgba(125,211,252,0.22)]">
+        <p className="text-[0.62rem] sm:text-[0.68rem] font-bold uppercase tracking-[0.25em] sm:tracking-[0.35em] text-sky-700">
           {content.countdown.title}
         </p>
-        <p className="mt-0.5 text-[0.62rem] font-semibold uppercase tracking-[0.25em] text-slate-500">
+        <p className="mt-0.5 text-[0.58rem] sm:text-[0.62rem] font-semibold uppercase tracking-[0.18em] sm:tracking-[0.25em] text-slate-500">
           {content.countdown.subtitle}
         </p>
-        <div className="mt-3 grid grid-cols-4 gap-2">
+        <div className="mt-3 grid grid-cols-4 gap-1.5 sm:gap-2">
           {items.map((item) => (
-            <div key={item.label} className="rounded-2xl bg-white/70 p-2 shadow-sm border border-white/80">
-              <p className="text-lg font-black text-slate-800 leading-tight">
+            <div key={item.label} className="rounded-2xl bg-white/70 p-1.5 sm:p-2 shadow-sm border border-white/80 flex flex-col justify-center items-center">
+              <p className="text-base sm:text-lg font-black text-slate-800 leading-tight">
                 {String(item.value).padStart(2, "0")}
               </p>
-              <p className="text-[0.62rem] font-bold uppercase tracking-[0.18em] text-sky-700 mt-0.5">
+              <p className="text-[0.48rem] xs:text-[0.55rem] sm:text-[0.62rem] font-bold uppercase tracking-tight xs:tracking-normal sm:tracking-[0.18em] text-sky-700 mt-0.5 whitespace-nowrap">
                 {item.label}
               </p>
             </div>

@@ -116,27 +116,25 @@ export function InvitationPage() {
           {hasStarted && (
             <div 
               onClick={handleEnterInvitation}
-              className="absolute inset-0 bg-transparent flex flex-col items-center justify-between py-10 px-4 cursor-pointer select-none"
+              className="absolute inset-0 bg-transparent cursor-pointer select-none z-20"
             >
               {/* Skip button (top-right) */}
-              <div className="w-full flex justify-end">
-                <button
-                  type="button"
-                  className="rounded-full bg-black/40 border border-white/20 px-4 py-2 text-[0.65rem] font-bold uppercase tracking-widest text-white backdrop-blur hover:bg-black/60 transition active:scale-95"
-                >
-                  Omitir Teaser
-                </button>
-              </div>
+              <button
+                type="button"
+                className="absolute top-6 right-6 rounded-full bg-black/40 border border-white/20 px-4 py-2 text-[0.65rem] font-bold uppercase tracking-widest text-white backdrop-blur hover:bg-black/60 transition active:scale-95 z-30"
+              >
+                Omitir Teaser
+              </button>
 
               {/* Enter prompt overlay (shows up when video ends) */}
               {videoEnded && (
-                <div className="w-full max-w-xs rounded-2xl bg-black/50 border border-white/10 p-5 text-center backdrop-blur-md shadow-2xl animate-[bounce_2s_infinite]">
-                  <p className="text-xs font-bold uppercase tracking-widest text-sky-400">
+                <div className="absolute bottom-10 left-1/2 -translate-x-1/2 w-full max-w-[280px] rounded-2xl bg-black/60 border border-white/15 p-4 text-center backdrop-blur-md shadow-2xl animate-[bounce_2s_infinite] z-30">
+                  <p className="text-[0.68rem] font-bold uppercase tracking-widest text-sky-400">
                     Junta Directiva Lista
                   </p>
                   <button
                     type="button"
-                    className="mt-3 inline-flex w-full items-center justify-center gap-1.5 rounded-xl bg-white px-5 py-3 font-bold text-slate-900 text-xs tracking-wider uppercase transition hover:scale-105 active:scale-95"
+                    className="mt-2.5 inline-flex w-full items-center justify-center gap-1.5 rounded-xl bg-white px-5 py-3 font-bold text-slate-900 text-xs tracking-wider uppercase transition hover:scale-105 active:scale-95 cursor-pointer"
                   >
                     Ver Invitación
                     <ChevronRight className="h-4.5 w-4.5" />

@@ -28,13 +28,15 @@ export function Reveal({ children, className = "", delayClassName = "" }: Reveal
           hasAnimated ? "is-visible" : ""
         } ${className}`}
       >
-        {/* Transparent Boss Baby with number 1 image at the top-right corner of each card */}
+        {/* Transparent Boss Baby with number 1 image (on mobile: smaller, moved right, lower opacity and z-index behind text; on desktop: standard floating overlay) */}
         <img
           src="/images/jefe_logo.png"
           alt="Jefe Emiliano"
-          className="absolute -top-7 right-6 z-30 w-12 h-16 object-contain pointer-events-none drop-shadow-[0_6px_12px_rgba(2,132,199,0.15)]"
+          className="absolute -top-7 right-2 sm:right-6 z-0 sm:z-30 w-10 h-14 sm:w-12 sm:h-16 object-contain pointer-events-none opacity-70 sm:opacity-100 drop-shadow-[0_6px_12px_rgba(2,132,199,0.15)]"
         />
-        {children}
+        <div className="relative z-10 w-full">
+          {children}
+        </div>
       </div>
     </div>
   );
