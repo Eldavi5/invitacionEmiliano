@@ -2,5 +2,5 @@
   "version": 3,
   "sources": [],
   "sections": [
-    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Volumes/Mac/MacExterno/Documents/NewProyectMona/src/app/loading.tsx"],"sourcesContent":["export default function Loading() {\n  return (\n    <main className=\"flex min-h-screen items-center justify-center bg-sky-50 text-slate-700\">\n      <p className=\"animate-pulse text-lg font-semibold\">Cargando invitación...</p>\n    </main>\n  );\n}\n"],"names":["Loading","className"],"mappings":";;;;;;AAAe,SAASA;IACtB,qBACE,8OAAC;QAAKC,WAAU;kBACd,cAAA,8OAAC;YAAEA,WAAU;sBAAsC;;;;;;;;;;;AAGzD"}}]
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Volumes/Mac/MacExterno/Documents/Bautizoyprimerano/src/app/loading.tsx"],"sourcesContent":["export default function Loading() {\n  return (\n    <main className=\"flex min-h-screen items-center justify-center bg-sky-50 text-slate-700\">\n      <p className=\"animate-pulse text-lg font-semibold\">Cargando invitación...</p>\n    </main>\n  );\n}\n"],"names":["Loading","className"],"mappings":";;;;;;AAAe,SAASA;IACtB,qBACE,8OAAC;QAAKC,WAAU;kBACd,cAAA,8OAAC;YAAEA,WAAU;sBAAsC;;;;;;;;;;;AAGzD"}}]
 }

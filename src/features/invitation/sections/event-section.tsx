@@ -1,137 +1,147 @@
-import type { Locale } from "@/data/invitation";
+"use client";
+
 import { invitationContent } from "@/data/invitation";
 import { CalendarDays, MapPin, MapPinned, PartyPopper } from "lucide-react";
-import { FlightFootprints } from "@/features/invitation/components/airplane-illustrations";
 
-interface EventSectionProps {
-  locale: Locale;
-}
+export function EventSection() {
+  const content = invitationContent;
 
-export function EventSection({ locale }: EventSectionProps) {
-  const content = invitationContent[locale];
-  const mapsHref = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(content.event.mapsQuery)}`;
+  const churchMapsHref = content.event.churchMapsUrl || `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(content.event.churchMapsQuery)}`;
+  const salonMapsHref = content.event.salonMapsUrl || `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(content.event.salonMapsQuery)}`;
 
   return (
-    <section className="space-y-6">
-      {/* Flight trail divider at the top */}
-      <FlightFootprints size={40} className="mb-2 opacity-85 animate-[pulse_3s_ease-in-out_infinite]" />
-
+    <section className="space-y-8">
       <div className="max-w-3xl text-center md:text-left">
         <p className="text-xs font-bold uppercase tracking-[0.38em] text-sky-700">
-          {content.eventTitle}
+          Detalles del Evento
         </p>
         <h2 className="mt-1 font-display text-3xl font-black text-slate-800 md:text-4xl">
-          {content.eventSubtitle}
+          ¿Dónde y Cuándo?
         </h2>
-        <p className="mt-2.5 max-w-2xl text-sm leading-relaxed text-slate-600 font-medium">
-          {content.eventNote}
+        <p className="mt-2 max-w-xl text-sm leading-relaxed text-slate-600 font-medium">
+          {content.phraseTwo}
         </p>
       </div>
 
-      <div className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
-        {/* Quick Details Cards */}
-        <div className="grid gap-4 sm:grid-cols-3 lg:grid-cols-1">
-          {/* Date Card */}
-          <div className="glass-card glass-card-hover p-6 rounded-[2rem] flex flex-col justify-center">
-            <div className="flex h-11 w-11 items-center justify-center rounded-full bg-sky-100/80 text-sky-700">
-              <CalendarDays className="h-5.5 w-5.5" />
-            </div>
-            <p className="mt-4 text-[0.68rem] font-bold uppercase tracking-[0.32em] text-sky-700">
-              {content.eventLabels.date}
-            </p>
-            <p className="mt-1.5 text-base font-black text-slate-800 leading-tight">
-              {content.event.date}
-            </p>
-          </div>
-
-          {/* Time Card */}
-          <div className="glass-card glass-card-hover p-6 rounded-[2rem] flex flex-col justify-center">
-            <div className="flex h-11 w-11 items-center justify-center rounded-full bg-sky-100/80 text-sky-700">
-              <PartyPopper className="h-5.5 w-5.5" />
-            </div>
-            <p className="mt-4 text-[0.68rem] font-bold uppercase tracking-[0.32em] text-sky-700">
-              {content.eventLabels.time}
-            </p>
-            <p className="mt-1.5 text-base font-black text-slate-800 leading-tight">
-              {content.event.time}
-            </p>
-          </div>
-
-          {/* Location Card */}
-          <div className="glass-card glass-card-hover p-6 rounded-[2rem] flex flex-col justify-center">
-            <div className="flex h-11 w-11 items-center justify-center rounded-full bg-sky-100/80 text-sky-700">
-              <MapPin className="h-5.5 w-5.5" />
-            </div>
-            <p className="mt-4 text-[0.68rem] font-bold uppercase tracking-[0.32em] text-sky-700">
-              {content.eventLabels.location}
-            </p>
-            <p className="mt-1.5 text-base font-black text-slate-800 leading-tight">
-              {content.event.location}
-            </p>
-          </div>
+      {/* Main date banner card (Full width date indicator) */}
+      <div className="glass-card glass-card-hover p-6 rounded-[2rem] flex flex-col sm:flex-row items-center justify-between gap-4 max-w-3xl mx-auto shadow-md">
+        <div className="flex h-12 w-12 items-center justify-center rounded-full bg-sky-100/80 text-sky-700">
+          <CalendarDays className="h-6 w-6" />
         </div>
+        <div className="text-center sm:text-left flex-1">
+          <p className="text-[0.68rem] font-bold uppercase tracking-[0.32em] text-sky-700">
+            {content.eventLabels.date}
+          </p>
+          <p className="mt-1 text-lg md:text-xl font-black text-slate-800">
+            {content.event.date}
+          </p>
+        </div>
+        <span className="text-[0.62rem] font-bold text-sky-700 tracking-wider bg-sky-50 border border-sky-100/50 px-4 py-2 rounded-full uppercase">
+          Salva la fecha
+        </span>
+      </div>
 
-        {/* Location Map Preview Panel */}
-        <div className="glass-card rounded-[2.2rem] p-6 flex flex-col justify-between shadow-[0_20px_50px_rgba(2,132,199,0.06)]">
+      <div className="grid gap-6 md:grid-cols-2">
+        {/* 1. MISA CARD */}
+        <div className="glass-card rounded-[2.2rem] p-6 flex flex-col justify-between shadow-[0_20px_50px_rgba(2,132,199,0.06)] border border-white/80">
           <div className="space-y-4">
             <div className="flex items-center gap-3">
               <span className="flex h-9 w-9 items-center justify-center rounded-full bg-sky-100 text-sky-700">
-                <MapPinned className="h-4.5 w-4.5" />
+                <PartyPopper className="h-4.5 w-4.5" />
               </span>
               <h3 className="font-display text-lg font-black text-slate-800">
-                {content.locationImageTitle}
+                {content.eventLabels.churchTime}
               </h3>
             </div>
+            
+            <div className="p-3.5 rounded-2xl bg-sky-50/50 border border-sky-100/30">
+              <span className="text-xs font-bold text-sky-700 uppercase tracking-widest">Hora Misa</span>
+              <p className="text-xl font-black text-slate-800 mt-0.5">{content.event.churchTime}</p>
+            </div>
 
-            <p className="text-sm leading-relaxed text-slate-600 font-medium">
-              {content.locationImageCaption}
-            </p>
+            <div className="space-y-2">
+              <div className="flex items-start gap-2">
+                <MapPin className="h-4.5 w-4.5 text-sky-700 shrink-0 mt-0.5" />
+                <div>
+                  <h4 className="text-sm font-black text-slate-850">{content.event.churchName}</h4>
+                  <p className="text-xs text-slate-500 leading-relaxed font-medium mt-0.5">{content.event.churchAddress}</p>
+                </div>
+              </div>
+            </div>
 
-            {/* Real Google Maps embed iframe with absolute custom airplane pin */}
+            {/* Google Maps embed iframe */}
             <div className="relative overflow-hidden rounded-[1.6rem] border border-sky-100/50 aspect-[1.8/1] flex items-center justify-center bg-sky-50 shadow-inner">
               <iframe
-                src="https://maps.google.com/maps?q=1034%20Lorlyn%20Cir,%20Batavia,%20IL%2060510&t=&z=17&ie=UTF8&iwloc=&output=embed"
-                className="absolute border-0 opacity-95"
-                style={{
-                  top: "-52px",
-                  left: "-90px",
-                  width: "calc(100% + 180px)",
-                  height: "calc(100% + 104px)"
-                }}
+                src={`https://maps.google.com/maps?q=${encodeURIComponent(content.event.churchMapsQuery)}&t=&z=16&ie=UTF8&iwloc=&output=embed`}
+                className="absolute border-0 opacity-95 w-full h-full"
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="strict-origin-when-cross-origin"
-                title="Google Maps Location"
+                title="Church Location Map"
               />
-              {/* Overlay cover to prevent capture of mouse wheel scroll on the landing page */}
               <div className="absolute inset-0 z-0 bg-transparent" />
-              
-              {/* Radar Landing Pad cover that completely covers the default Google red pin marker */}
-              <div className="absolute top-[49%] left-[50%] -translate-x-1/2 -translate-y-1/2 w-8 h-8 bg-white rounded-full border-2 border-sky-600 shadow-md flex items-center justify-center z-10">
-                {/* Inner target circle */}
-                <div className="w-4.5 h-4.5 bg-sky-600 rounded-full flex items-center justify-center">
-                  <div className="w-2 h-2 bg-white rounded-full" />
-                </div>
-                {/* Pulse ring */}
-                <div className="absolute w-full h-full rounded-full border-2 border-sky-400 animate-ping opacity-35" />
-              </div>
-
-              {/* Custom bouncing Airplane pin floating above the landing target center */}
-              <div className="absolute top-[41%] left-[50%] -translate-x-[50%] -translate-y-1/2 z-15 pointer-events-none">
-                <span className="flex h-11 w-11 items-center justify-center rounded-full bg-sky-700 text-white shadow-[0_8px_20px_rgba(3,105,161,0.35)] border-2 border-white text-base animate-bounce">
-                  ✈️
-                </span>
-              </div>
             </div>
           </div>
 
           <a
-            href={mapsHref}
+            href={churchMapsHref}
             target="_blank"
             rel="noreferrer"
-            className="mt-6 flex w-full items-center justify-center gap-2.5 rounded-2xl bg-sky-700 px-6 py-4 font-bold text-white shadow-lg shadow-sky-700/15 transition-all duration-300 hover:-translate-y-0.5 hover:bg-sky-800 hover:shadow-xl hover:shadow-sky-700/25 cursor-pointer text-center text-sm tracking-wide"
+            className="mt-6 flex w-full items-center justify-center gap-2.5 rounded-2xl bg-sky-750 px-6 py-3.5 font-bold text-white bg-sky-700 shadow-md transition-all duration-350 hover:-translate-y-0.5 hover:bg-sky-850 cursor-pointer text-center text-xs tracking-wide uppercase"
           >
-            <MapPinned className="h-4.5 w-4.5" />
+            <MapPinned className="h-4 w-4" />
+            {content.mapsButton}
+          </a>
+        </div>
+
+        {/* 2. SALON CARD */}
+        <div className="glass-card rounded-[2.2rem] p-6 flex flex-col justify-between shadow-[0_20px_50px_rgba(2,132,199,0.06)] border border-white/80">
+          <div className="space-y-4">
+            <div className="flex items-center gap-3">
+              <span className="flex h-9 w-9 items-center justify-center rounded-full bg-sky-100 text-sky-700">
+                <PartyPopper className="h-4.5 w-4.5" />
+              </span>
+              <h3 className="font-display text-lg font-black text-slate-800">
+                {content.eventLabels.salonTime}
+              </h3>
+            </div>
+
+            <div className="p-3.5 rounded-2xl bg-sky-50/50 border border-sky-100/30">
+              <span className="text-xs font-bold text-sky-700 uppercase tracking-widest">Hora Fiesta</span>
+              <p className="text-xl font-black text-slate-800 mt-0.5">{content.event.salonTime}</p>
+            </div>
+
+            <div className="space-y-2">
+              <div className="flex items-start gap-2">
+                <MapPin className="h-4.5 w-4.5 text-sky-700 shrink-0 mt-0.5" />
+                <div>
+                  <h4 className="text-sm font-black text-slate-850">{content.event.salonName}</h4>
+                  <p className="text-xs text-slate-500 leading-relaxed font-medium mt-0.5">{content.event.salonAddress}</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Google Maps embed iframe */}
+            <div className="relative overflow-hidden rounded-[1.6rem] border border-sky-100/50 aspect-[1.8/1] flex items-center justify-center bg-sky-50 shadow-inner">
+              <iframe
+                src={`https://maps.google.com/maps?q=${encodeURIComponent(content.event.salonMapsQuery)}&t=&z=16&ie=UTF8&iwloc=&output=embed`}
+                className="absolute border-0 opacity-95 w-full h-full"
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="strict-origin-when-cross-origin"
+                title="Salon Location Map"
+              />
+              <div className="absolute inset-0 z-0 bg-transparent" />
+            </div>
+          </div>
+
+          <a
+            href={salonMapsHref}
+            target="_blank"
+            rel="noreferrer"
+            className="mt-6 flex w-full items-center justify-center gap-2.5 rounded-2xl bg-sky-750 px-6 py-3.5 font-bold text-white bg-sky-700 shadow-md transition-all duration-350 hover:-translate-y-0.5 hover:bg-sky-850 cursor-pointer text-center text-xs tracking-wide uppercase"
+          >
+            <MapPinned className="h-4 w-4" />
             {content.mapsButton}
           </a>
         </div>
@@ -139,4 +149,5 @@ export function EventSection({ locale }: EventSectionProps) {
     </section>
   );
 }
+
 export default EventSection;

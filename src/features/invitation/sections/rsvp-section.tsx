@@ -1,19 +1,14 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import type { Locale } from "@/data/invitation";
 import { invitationContent } from "@/data/invitation";
 import { buildWhatsAppLink } from "@/lib/whatsapp";
-import { MessageCircleMore, PhoneCall, Plus, Minus, User, Users, MessageSquareText, PlaneTakeoff } from "lucide-react";
-
-interface RSVPSectionProps {
-  locale: Locale;
-}
+import { MessageCircleMore, PhoneCall, Plus, Minus, User, Users, MessageSquareText } from "lucide-react";
 
 type ConfirmType = "individual" | "family";
 
-export function RSVPSection({ locale }: RSVPSectionProps) {
-  const content = invitationContent[locale];
+export function RSVPSection() {
+  const content = invitationContent;
   const [confirmType, setConfirmType] = useState<ConfirmType>("family");
   const [name, setName] = useState("");
   const [guestCount, setGuestCount] = useState(2);
@@ -27,7 +22,6 @@ export function RSVPSection({ locale }: RSVPSectionProps) {
     setGuestCount((prev) => Math.max(prev - 1, 1));
   };
 
-  // Adjust guest count based on selection type
   const handleTypeChange = (type: ConfirmType) => {
     setConfirmType(type);
     if (type === "individual") {
@@ -37,34 +31,23 @@ export function RSVPSection({ locale }: RSVPSectionProps) {
     }
   };
 
-  // Modernized, cheerful, and flight-themed WhatsApp confirmation message
+  // Boss Baby / Baptism themed WhatsApp message
   const whatsappMessage = useMemo(() => {
     const displayName = name.trim() || content.rsvp.defaultFamily;
-    const typeLabel = confirmType === "individual"
-      ? (locale === "es" ? "Pasajero Individual" : "Single Passenger")
-      : (locale === "es" ? "Grupo Familiar" : "Family Group");
+    const typeLabel = confirmType === "individual" ? "Pase Individual" : "Pase Familiar";
 
-    if (locale === "es") {
-      let msg = `✈️ *¡Hola Capitanes Omar y Mónica!*\n\nMe hace muy feliz confirmar mi boleto de abordaje para el Vuelo de Santiago 🎫☁️\n\n✨ *Detalles del Vuelo:*\n• Categoría: ${typeLabel}\n• Nombre del Pasajero: ${displayName}\n• Asientos Reservados: ${guestCount} ${guestCount === 1 ? "asiento" : "asientos"}`;
-      if (customNote.trim()) {
-        msg += `\n\n💌 *Mensaje para la bitácora:*\n"${customNote.trim()}"`;
-      }
-      msg += `\n\n¡Qué emoción abordar pronto para festejar juntos! 🛫💙`;
-      return msg;
-    } else {
-      let msg = `✈️ *Hello Captains Omar and Monica!*\n\nI am thrilled to confirm my boarding pass for Santiago's Flight 🎫☁️\n\n✨ *Flight Details:*\n• Category: ${typeLabel}\n• Passenger Name: ${displayName}\n• Seats Reserved: ${guestCount} ${guestCount === 1 ? "seat" : "seats"}`;
-      if (customNote.trim()) {
-        msg += `\n\n💌 *Message for the logbook:*\n"${customNote.trim()}"`;
-      }
-      msg += `\n\nCan't wait to board soon and celebrate together! 🛫💙`;
-      return msg;
+    let msg = `🍼 *¡Hola papás de Emiliano!*\n\nMe hace muy feliz confirmar mi asistencia para el Bautizo y Primer Añito de Emiliano 👶👑\n\n✨ *Detalles de Confirmación:*\n• Tipo de Pase: ${typeLabel}\n• Nombre del Invitado: ${displayName}\n• Pases Reservados: ${guestCount} ${guestCount === 1 ? "pase" : "pases"}`;
+    if (customNote.trim()) {
+      msg += `\n\n💌 *Mensaje con cariño:*\n"${customNote.trim()}"`;
     }
-  }, [confirmType, name, guestCount, customNote, locale, content.rsvp.defaultFamily]);
+    msg += `\n\n¡Nos vemos pronto para celebrar juntos! 🎂🎈`;
+    return msg;
+  }, [confirmType, name, guestCount, customNote, content.rsvp.defaultFamily]);
 
   const whatsappLink = buildWhatsAppLink(content.rsvp.phone, whatsappMessage);
 
   return (
-    <section className="glass-card rounded-[2.5rem] p-6 md:p-8 space-y-6 shadow-[0_20px_50px_rgba(2,132,199,0.06)]">
+    <section className="glass-card rounded-[2.5rem] p-6 md:p-8 space-y-6 shadow-[0_20px_50px_rgba(2,132,199,0.06)] border border-white/80">
       <div>
         <p className="text-xs font-bold uppercase tracking-[0.38em] text-sky-700 block">
           {content.rsvp.title}
@@ -83,7 +66,7 @@ export function RSVPSection({ locale }: RSVPSectionProps) {
           {/* Confirmation Type Toggle */}
           <div className="space-y-2">
             <span className="text-[0.68rem] font-bold uppercase tracking-[0.3em] text-sky-700 block">
-              {locale === "es" ? "¿Cómo confirmarás tu vuelo?" : "How will you confirm your flight?"}
+              ¿Cómo confirmarás tu asistencia?
             </span>
             <div className="grid grid-cols-2 gap-2.5 p-1 rounded-2xl bg-white/70 border border-sky-100/30">
               <button
@@ -96,7 +79,7 @@ export function RSVPSection({ locale }: RSVPSectionProps) {
                 }`}
               >
                 <User className="h-4 w-4" />
-                {locale === "es" ? "Individual" : "Individual"}
+                Individual
               </button>
               <button
                 type="button"
@@ -108,7 +91,7 @@ export function RSVPSection({ locale }: RSVPSectionProps) {
                 }`}
               >
                 <Users className="h-4 w-4" />
-                {locale === "es" ? "Grupo / Familia" : "Group / Family"}
+                Grupo / Familia
               </button>
             </div>
           </div>
@@ -117,7 +100,7 @@ export function RSVPSection({ locale }: RSVPSectionProps) {
           <div className="space-y-2">
             <span className="text-[0.68rem] font-bold uppercase tracking-[0.3em] text-sky-700 block">
               {confirmType === "individual"
-                ? (locale === "es" ? "Nombre Completo del Pasajero" : "Full Passenger Name")
+                ? "Nombre Completo del Invitado"
                 : content.rsvp.familyLabel}
             </span>
             <input
@@ -126,7 +109,7 @@ export function RSVPSection({ locale }: RSVPSectionProps) {
               onChange={(e) => setName(e.target.value)}
               placeholder={
                 confirmType === "individual"
-                  ? (locale === "es" ? "Ej. Sofía Pérez" : "Ex. Sofia Perez")
+                  ? "Ej. Sofía Pérez"
                   : content.rsvp.familyPlaceholder
               }
               className="w-full rounded-2xl px-4 py-3 text-sm text-slate-800 outline-none glass-input font-medium"
@@ -163,20 +146,16 @@ export function RSVPSection({ locale }: RSVPSectionProps) {
             </div>
           )}
 
-          {/* Custom Flight Note */}
+          {/* Custom Note */}
           <div className="space-y-2">
             <span className="text-[0.68rem] font-bold uppercase tracking-[0.3em] text-sky-700 flex items-center gap-1.5">
               <MessageSquareText className="h-4 w-4 text-sky-500" />
-              {locale === "es" ? "Mensaje especial para la bitácora" : "Special message for the logbook"}
+              Mensaje especial
             </span>
             <textarea
               value={customNote}
               onChange={(e) => setCustomNote(e.target.value)}
-              placeholder={
-                locale === "es"
-                  ? "Escribe tus buenos deseos o bendiciones para el viaje de Santiago y sus papás..."
-                  : "Write your warm wishes or blessings for Santiago's flight..."
-              }
+              placeholder="Escribe tus buenos deseos o bendiciones para Emiliano..."
               rows={2}
               className="w-full rounded-2xl px-4 py-3 text-sm text-slate-800 outline-none glass-input font-medium resize-none"
             />
@@ -190,7 +169,7 @@ export function RSVPSection({ locale }: RSVPSectionProps) {
               rel="noreferrer"
               className="flex-1 inline-flex items-center justify-center gap-2.5 rounded-2xl bg-sky-700 px-6 py-4 font-bold text-white shadow-lg shadow-sky-700/10 transition-all duration-300 hover:-translate-y-0.5 hover:bg-sky-800 hover:shadow-xl hover:shadow-sky-700/20 cursor-pointer text-center text-sm"
             >
-              <PlaneTakeoff className="h-5 w-5 animate-pulse" />
+              <MessageCircleMore className="h-5 w-5 animate-pulse" />
               {content.rsvp.submit}
             </a>
             
@@ -201,32 +180,40 @@ export function RSVPSection({ locale }: RSVPSectionProps) {
           </div>
         </div>
 
-        {/* Live Chat Bubble Preview */}
-        <div className="glass-card rounded-[2rem] p-5 flex flex-col justify-between shadow-[0_20px_50px_rgba(2,132,199,0.06)] overflow-hidden">
-          <div className="space-y-4">
-            <p className="text-[0.68rem] font-bold uppercase tracking-[0.3em] text-slate-400">
-              {locale === "es" ? "Pase de Abordar Generado" : "Generated Boarding Confirmation"}
-            </p>
+        {/* Live Chat Bubble Preview with Pointing Boss Baby */}
+        <div className="relative min-h-[350px] flex flex-col">
+          <div className="glass-card rounded-[2rem] p-5 pb-20 flex-1 flex flex-col justify-between shadow-[0_20px_50px_rgba(2,132,199,0.06)] overflow-hidden border border-white/80">
+            <div className="space-y-4">
+              <p className="text-[0.68rem] font-bold uppercase tracking-[0.3em] text-slate-400">
+                Mensaje Generado
+              </p>
 
-            {/* Smart Simulated Chat Bubble */}
-            <div className="relative rounded-[1.6rem] bg-[#E2F6DD] border border-[#C6EDB8] p-4 text-slate-800 shadow-sm text-xs leading-relaxed max-w-sm mx-auto font-medium">
-              <div className="whitespace-pre-line font-sans">
-                {whatsappMessage}
+              {/* Smart Simulated Chat Bubble - Shifted left */}
+              <div className="relative rounded-[1.6rem] bg-[#E2F6DD] border border-[#C6EDB8] p-4 text-slate-800 shadow-sm text-xs leading-relaxed max-w-[220px] sm:max-w-[250px] mr-auto ml-1 font-medium z-20">
+                <div className="whitespace-pre-line font-sans">
+                  {whatsappMessage}
+                </div>
+                
+                {/* WhatsApp bubble triangle pin on the left */}
+                <div className="absolute left-[-8px] top-4 w-0 h-0 border-t-[8px] border-t-[#E2F6DD] border-l-[8px] border-l-transparent" />
               </div>
-              
-              {/* WhatsApp bubble triangle pin */}
-              <div className="absolute right-[-8px] top-4 w-0 h-0 border-t-[8px] border-t-[#E2F6DD] border-r-[8px] border-r-transparent" />
             </div>
-          </div>
 
-          <p className="text-[0.65rem] font-semibold text-slate-400 mt-6 text-center">
-            {locale === "es"
-              ? "Este mensaje abrirá tu pase de abordar directamente en tu WhatsApp para enviarlo con un solo toque."
-              : "This message will open your boarding pass directly on your WhatsApp for one-tap sending."}
-          </p>
+            <p className="text-[0.65rem] font-semibold text-slate-400 mt-6 text-left max-w-[180px] z-20 leading-relaxed">
+              Este mensaje se abrirá en tu WhatsApp listo para enviarse.
+            </p>
+          </div>
+          
+          {/* Pointing Boss Baby from User's template */}
+          <img
+            src="/images/jefe_confirmacion_final.png"
+            alt="Jefe Presentando Confirmación"
+            className="absolute bottom-[-10px] right-[-10px] z-10 w-32 md:w-40 object-contain pointer-events-none drop-shadow-[0_12px_24px_rgba(2,132,199,0.18)]"
+          />
         </div>
       </div>
     </section>
   );
 }
+
 export default RSVPSection;

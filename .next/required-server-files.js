@@ -104,7 +104,7 @@ self.__SERVER_FILES_MANIFEST={
         "transform": "lodash/{{member}}"
       }
     },
-    "outputFileTracingRoot": "/Volumes/Mac/MacExterno/Documents/NewProyectMona",
+    "outputFileTracingRoot": "/Volumes/Mac/MacExterno/Documents/Bautizoyprimerano",
     "cacheComponents": false,
     "cacheLife": {
       "default": {
@@ -304,11 +304,11 @@ self.__SERVER_FILES_MANIFEST={
     "bundlePagesRouterDependencies": false,
     "configFileName": "next.config.mjs",
     "turbopack": {
-      "root": "/Volumes/Mac/MacExterno/Documents/NewProyectMona"
+      "root": "/Volumes/Mac/MacExterno/Documents/Bautizoyprimerano"
     },
     "distDirRoot": ".next"
   },
-  "appDir": "/Volumes/Mac/MacExterno/Documents/NewProyectMona",
+  "appDir": "/Volumes/Mac/MacExterno/Documents/Bautizoyprimerano",
   "relativeAppDir": "",
   "files": [
     ".next/package.json",

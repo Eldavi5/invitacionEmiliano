@@ -1,14 +1,11 @@
-import type { Locale } from "@/data/invitation";
+"use client";
+
 import { invitationContent } from "@/data/invitation";
 import { CountdownCard } from "@/components/ui/countdown-card";
-import { BabyAirplane } from "@/features/invitation/components/airplane-illustrations";
+import { CrownIcon } from "../components/boss-baby-illustrations";
 
-interface HeroSectionProps {
-  locale: Locale;
-}
-
-export function HeroSection({ locale }: HeroSectionProps) {
-  const content = invitationContent[locale];
+export function HeroSection() {
+  const content = invitationContent;
 
   return (
     <section className="relative overflow-hidden rounded-[2.8rem] border border-white/70 bg-gradient-to-br from-white/80 via-sky-50/50 to-white/80 px-6 py-12 shadow-[0_24px_70px_-15px_rgba(2,132,199,0.12)] backdrop-blur-md md:px-10 md:py-16">
@@ -17,9 +14,9 @@ export function HeroSection({ locale }: HeroSectionProps) {
       <div className="absolute bottom-[-10%] left-[-10%] h-40 w-40 rounded-full bg-blue-100/30 blur-3xl" />
       
       <div className="relative mx-auto max-w-3xl text-center flex flex-col items-center">
-        {/* Animated Baby Airplane illustration flying */}
-        <div className="mb-4">
-          <BabyAirplane size={170} className="plane-float" />
+        {/* Crown welcoming Emiliano's baptism and first year */}
+        <div className="mb-6 animate-[bounce_3s_ease-in-out_infinite]">
+          <CrownIcon size={100} className="filter drop-shadow-md" />
         </div>
 
         {/* Welcome Pill */}
@@ -28,21 +25,27 @@ export function HeroSection({ locale }: HeroSectionProps) {
         </p>
 
         {/* Invitation Title */}
-        <h1 className="mt-6 font-display text-4xl font-black tracking-tight text-slate-800 md:text-6xl max-w-2xl leading-[1.12]">
+        <h1 className="mt-6 font-display text-4xl font-black tracking-tight text-slate-800 md:text-5xl lg:text-6xl max-w-2xl leading-[1.15]">
           {content.hostName}
         </h1>
 
         {/* Emotional Greeting Message */}
-        <p className="mx-auto mt-6 max-w-2xl text-sm md:text-base leading-relaxed text-slate-600 font-medium">
+        <p className="mx-auto mt-6 max-w-xl text-sm md:text-base leading-relaxed text-slate-600 font-medium">
           {content.message}
         </p>
 
+        {/* Beautiful Boss Baby theme quote */}
+        <p className="mx-auto mt-4 max-w-lg text-xs md:text-sm italic leading-relaxed text-sky-600/80 font-bold">
+          "{content.phrase}"
+        </p>
+
         {/* Countdown - Centered and highlighted */}
-        <div className="mt-9 w-full max-w-md">
-          <CountdownCard locale={locale} />
+        <div className="mt-20 w-full max-w-md">
+          <CountdownCard />
         </div>
       </div>
     </section>
   );
 }
+
 export default HeroSection;

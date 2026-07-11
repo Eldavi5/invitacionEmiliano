@@ -72,8 +72,8 @@ var __TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$f
 ;
 ;
 const metadata = {
-    title: "Baby Bloom | Invitación Baby Shower",
-    description: "Invitación responsiva para baby shower con estética baby bloom, música, animaciones y confirmación por WhatsApp.",
+    title: "Bautizo y Primer Año | Emiliano",
+    description: "Invitación digital interactiva para el bautizo y primer cumpleaños de Emiliano con temática de Un Jefe en Pañales (The Boss Baby).",
     metadataBase: new URL("http://localhost:3000")
 };
 function RootLayout({ children }) {
