@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Fraunces, Plus_Jakarta_Sans } from "next/font/google";
+import { Dancing_Script, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 
 const bodyFont = Plus_Jakarta_Sans({
@@ -7,9 +7,10 @@ const bodyFont = Plus_Jakarta_Sans({
   variable: "--font-body"
 });
 
-const displayFont = Fraunces({
+const displayFont = Dancing_Script({
   subsets: ["latin"],
-  variable: "--font-display"
+  variable: "--font-display",
+  weight: ["400", "700"]
 });
 
 export const metadata: Metadata = {
