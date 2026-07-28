@@ -10,13 +10,13 @@ export const invitationContent = {
     date: "Sábado 19 de Septiembre de 2026",
     churchTime: "3:00 PM",
     salonTime: "4:00 PM",
-    churchName: "Parroquia Nuestra Señora de Fátima",
-    churchAddress: "C. Cerro de los Tepozanes 172, Jorge Jimenez Cantu, 54190 Tlalnepantla, Méx.",
+    churchName: "Parroquia de San José Obrero",
+    churchAddress: "C. Cerro de Las Cruces sn, Jorge Jimenez Cantu, 54190 Tlalnepantla, Méx.",
     salonName: "Salón de Fiestas",
     salonAddress: "C. Chabacano 15, Jorge Jimenez Cantu, 54190 Tlalnepantla, Méx.",
-    churchMapsUrl: "https://maps.app.goo.gl/oGmHAc4aViKZHr6s7",
+    churchMapsUrl: "https://maps.app.goo.gl/wj56a2Tbss6qB69U7",
     salonMapsUrl: "https://maps.app.goo.gl/tQeDyVM2yMLYC1tW8",
-    churchMapsQuery: "Cerro de los Tepozanes 172 Jorge Jimenez Cantu Tlalnepantla",
+    churchMapsQuery: "Parroquia San Jose Obrero Cerro de Las Cruces Jorge Jimenez Cantu Tlalnepantla",
     salonMapsQuery: "C. Chabacano 15 Jorge Jimenez Cantu Tlalnepantla"
   },
   eventLabels: {
@@ -50,38 +50,38 @@ export const invitationContent = {
   itinerary: [
     {
       time: "3:00 PM",
-      title: "Misa",
-      description: "Misa a las 3 de la tarde.",
+      title: "Paso de Fe Corporativo (Misa)",
+      description: "Daremos inicio en la Parroquia con la misa de bautizo de Emiliano a las 3:00 PM.",
       iconType: "church"
     },
     {
       time: "4:00 PM",
-      title: "Recepción",
-      description: "Recepción a partir de las 4 pm.",
+      title: "Acceso a la Recepción (Salón)",
+      description: "La mesa directiva y asociados se reúnen en el Salón a partir de las 4:00 PM para festejar.",
       iconType: "welcome"
     },
     {
       time: "4:00 PM - 6:00 PM",
-      title: "Comida",
-      description: "Comida de 4 a 6 pm.",
+      title: "Banquete de Asociados (Comida)",
+      description: "Disfrutaremos de 4:00 PM a 6:00 PM del menú ejecutivo de gala preparado para la ocasión.",
       iconType: "food"
     },
     {
       time: "6:00 PM",
-      title: "Show de Emi",
-      description: "Show de Emi a las 6 pm.",
+      title: "Show de Baby Corp (Show de Emi)",
+      description: "A las 6:00 PM: juegos, risas y el gran Show de Emi a cargo del Pequeño Gran Jefe.",
       iconType: "show"
     },
     {
       time: "7:00 PM",
-      title: "Pastel, Piñata y Despedida",
-      description: "A las 7 se parte su pastel, piñata y despedida.",
+      title: "Cierre de Negocios (Pastel, Piñata y Despedida)",
+      description: "A las 7:00 PM Emiliano apagará su primera vela, romperemos la piñata y despedida.",
       iconType: "cake"
     },
     {
-      time: "7:30 PM",
-      title: "Inicio del Baile",
-      description: "Damos inicio al baile (sonido).",
+      time: "A continuación",
+      title: "Fiesta Ejecutiva (Inicio del Baile)",
+      description: "Damos inicio al baile con sonido y música para todos los invitados especiales.",
       iconType: "dismiss"
     }
   ],
