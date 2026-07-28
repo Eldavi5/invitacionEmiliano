@@ -18,12 +18,15 @@ export function ParentsSection() {
       </div>
 
       <div className="grid gap-6 md:grid-cols-[0.8fr_1.2fr] items-center">
-        {/* Family Photo */}
-        <div className="relative aspect-square flex items-center justify-center rounded-[2rem] border border-sky-100/40 shadow-md overflow-hidden bg-sky-50">
+        {/* Boss Baby Character Illustration */}
+        <div className="relative flex items-center justify-center p-2">
+          {/* Soft background glow */}
+          <div className="absolute inset-0 m-auto h-48 w-48 rounded-full bg-sky-200/40 blur-2xl pointer-events-none" />
+          
           <img
-            src="/images/emiliano_familia.jpg"
-            alt="Emiliano, Papás y Madrina"
-            className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+            src="/images/bebeenpanales_clean.png"
+            alt="El Pequeño Gran Jefe Emiliano"
+            className="relative z-10 max-h-60 sm:max-h-68 w-auto object-contain filter drop-shadow-[0_12px_24px_rgba(2,132,199,0.2)] transition-transform duration-500 hover:scale-105"
           />
         </div>
 

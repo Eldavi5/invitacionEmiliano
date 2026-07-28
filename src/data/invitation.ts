@@ -8,8 +8,8 @@ export const invitationContent = {
   },
   event: {
     date: "Sábado 19 de Septiembre de 2026",
-    churchTime: "1:00 PM",
-    salonTime: "2:30 PM",
+    churchTime: "3:00 PM",
+    salonTime: "4:00 PM",
     churchName: "Parroquia Nuestra Señora de Fátima",
     churchAddress: "C. Cerro de los Tepozanes 172, Jorge Jimenez Cantu, 54190 Tlalnepantla, Méx.",
     salonName: "Salón de Fiestas",
@@ -49,39 +49,39 @@ export const invitationContent = {
   itinerarySubtitle: "Agenda de la Junta Ejecutiva",
   itinerary: [
     {
-      time: "1:00 PM",
-      title: "Paso de Fe Corporativo (Misa)",
-      description: "Daremos inicio en la Parroquia con la misa de bautizo de Emiliano.",
+      time: "3:00 PM",
+      title: "Misa",
+      description: "Misa a las 3 de la tarde.",
       iconType: "church"
     },
     {
-      time: "2:30 PM",
-      title: "Acceso a la Recepción (Salón)",
-      description: "La mesa directiva y asociados se reúnen en el Salón Jardín Cristal para festejar.",
+      time: "4:00 PM",
+      title: "Recepción",
+      description: "Recepción a partir de las 4 pm.",
       iconType: "welcome"
     },
     {
-      time: "3:30 PM",
-      title: "Banquete de Asociados (Comida)",
-      description: "Disfrutaremos del menú ejecutivo de gala preparado para la ocasión.",
+      time: "4:00 PM - 6:00 PM",
+      title: "Comida",
+      description: "Comida de 4 a 6 pm.",
       iconType: "food"
     },
     {
-      time: "5:00 PM",
-      title: "Show de Baby Corp (Animación)",
-      description: "Juegos, risas y dinámicas a cargo del Pequeño Gran Jefe Emiliano.",
+      time: "6:00 PM",
+      title: "Show de Emi",
+      description: "Show de Emi a las 6 pm.",
       iconType: "show"
     },
     {
-      time: "6:00 PM",
-      title: "Cierre de Negocios (Pastel y Piñata)",
-      description: "Emiliano apagará su primera vela de cumpleaños y romperemos la piñata.",
+      time: "7:00 PM",
+      title: "Pastel, Piñata y Despedida",
+      description: "A las 7 se parte su pastel, piñata y despedida.",
       iconType: "cake"
     },
     {
       time: "7:30 PM",
-      title: "Despido de Personal (Agradecimiento)",
-      description: "Momento para fotos oficiales y entrega de recuerdos del Pequeño Gran Jefe.",
+      title: "Inicio del Baile",
+      description: "Damos inicio al baile (sonido).",
       iconType: "dismiss"
     }
   ],
@@ -131,7 +131,7 @@ export const invitationContent = {
     title: "Confirmar Asistencia",
     heading: "Reserva tus pases de negocios",
     description: "Llena el formulario y presiona el botón. Se generará un pase de entrada listo para enviar por WhatsApp.",
-    phone: "+525512345678",
+    phone: "+52 56 1057 2735",
     familyLabel: "Nombre de tu Familia / Invitado",
     familyPlaceholder: "Ej. Familia Gómez o Sofía Pérez",
     peopleLabel: "¿Cuántos pases ejecutivos confirmas?",

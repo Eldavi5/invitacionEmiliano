@@ -40,69 +40,6 @@ function PacifierBackgroundIcon({ className = "", size = 52 }: { className?: str
   );
 }
 
-// Golden Crown with Metallic Gradient
-function GoldCrownIcon({ className = "", size = 78 }: { className?: string; size?: number }) {
-  return (
-    <svg
-      width={size}
-      height={size}
-      viewBox="0 0 48 48"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      className={`${className} drop-shadow-[0_12px_24px_rgba(202,138,4,0.25)]`}
-    >
-      <defs>
-        <linearGradient id="gold-crown-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stopColor="#FDE047" />
-          <stop offset="40%" stopColor="#CA8A04" />
-          <stop offset="75%" stopColor="#EAB308" />
-          <stop offset="100%" stopColor="#854D0E" />
-        </linearGradient>
-      </defs>
-      <path
-        d="M8 38 L40 38 L42 33 L38 30 L34 31 L24 18 L14 31 L10 30 L6 33 Z"
-        fill="url(#gold-crown-grad)"
-        stroke="#EAB308"
-        strokeWidth="1.2"
-      />
-      <path
-        d="M8 35 L5 18 L14 25 L24 10 L34 25 L43 18 L40 35 Z"
-        fill="url(#gold-crown-grad)"
-        stroke="#CA8A04"
-        strokeWidth="0.8"
-      />
-      <circle cx="5" cy="18" r="2.5" fill="#FEF08A" />
-      <circle cx="14" cy="25" r="2" fill="#FEF08A" />
-      <circle cx="24" cy="10" r="3.5" fill="#FEF08A" />
-      <circle cx="34" cy="25" r="2" fill="#FEF08A" />
-      <circle cx="43" cy="18" r="2.5" fill="#FEF08A" />
-    </svg>
-  );
-}
-
-// Minimalist baby face wearing a tiny crown
-function BabyFaceCrownBackgroundIcon({ className = "", size = 64 }: { className?: string; size?: number }) {
-  return (
-    <svg
-      width={size}
-      height={size}
-      viewBox="0 0 48 48"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      className={`text-sky-400/50 ${className}`}
-    >
-      <circle cx="24" cy="28" r="13" stroke="currentColor" strokeWidth="2.5" fill="none" />
-      <circle cx="10" cy="28" r="3.5" stroke="currentColor" strokeWidth="2" fill="none" />
-      <circle cx="38" cy="28" r="3.5" stroke="currentColor" strokeWidth="2" fill="none" />
-      <circle cx="20" cy="26" r="1.5" fill="currentColor" />
-      <circle cx="28" cy="26" r="1.5" fill="currentColor" />
-      <path d="M21 32 Q24 35 27 32" stroke="currentColor" strokeWidth="2" strokeLinecap="round" fill="none" />
-      <path d="M24 15 C25 13, 27 14, 26 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" fill="none" />
-      <path d="M17 17 L15 9 L20 12 L24 6 L28 12 L33 9 L31 17 Z" fill="#CA8A04" opacity="0.8" />
-    </svg>
-  );
-}
-
 // Blue Balloon with Shiny highlights
 function BlueBalloonIcon({ className = "", size = 80 }: { className?: string; size?: number }) {
   return (
@@ -170,12 +107,12 @@ export function SkyBackground() {
         <SkyCloud width={160} height={90} className="text-white/70" />
       </div>
 
-      {/* 3. Gold Crown Mid-Left-Top (Parallax Speed: -0.25) */}
+      {/* 3. Soft Cloud Mid-Left-Top (Parallax Speed: -0.25) */}
       <div
-        className="absolute left-[5%] top-[24%] transition-transform duration-100 ease-out plane-float"
-        style={{ transform: `translateY(${scrollY * -0.25}px) rotate(10deg)` }}
+        className="absolute left-[5%] top-[24%] transition-transform duration-100 ease-out"
+        style={{ transform: `translateY(${scrollY * -0.25}px)` }}
       >
-        <GoldCrownIcon size={82} />
+        <SkyCloud width={150} height={85} className="text-white/65" />
       </div>
 
       {/* 4. Soft Cloud Mid-Right (Parallax Speed: 0.14) */}
@@ -186,12 +123,12 @@ export function SkyBackground() {
         <SkyCloud width={170} height={95} className="text-white/55" />
       </div>
 
-      {/* 5. Baby Face with Crown Mid-Left (Parallax Speed: 0.06) */}
+      {/* 5. Pacifier Background Icon Mid-Left (Parallax Speed: 0.06) */}
       <div
         className="absolute left-[7%] top-[45%] transition-transform duration-100 ease-out plane-float"
         style={{ transform: `translateY(${scrollY * 0.06}px) rotate(-8deg)` }}
       >
-        <BabyFaceCrownBackgroundIcon size={64} />
+        <PacifierBackgroundIcon size={60} />
       </div>
 
       {/* 6. Large Blue Balloon Mid-Right-Bottom (Parallax Speed: -0.18) */}
@@ -210,12 +147,12 @@ export function SkyBackground() {
         <SkyCloud width={180} height={100} className="text-white/60" />
       </div>
 
-      {/* 8. Gold Crown Bottom-Left (Parallax Speed: -0.15) */}
+      {/* 8. Blue Balloon Bottom-Left (Parallax Speed: -0.15) */}
       <div
         className="absolute left-[4%] top-[77%] transition-transform duration-100 ease-out plane-float"
         style={{ transform: `translateY(${scrollY * -0.15}px) rotate(12deg)` }}
       >
-        <GoldCrownIcon size={80} />
+        <BlueBalloonIcon size={78} />
       </div>
 
       {/* 9. Large Balloon and Pacifier Bottom-Right (Parallax Speed: 0.25) */}
