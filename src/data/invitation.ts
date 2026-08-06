@@ -134,8 +134,8 @@ export const invitationContent = {
     phone: "+52 56 1057 2735",
     familyLabel: "Nombre de tu Familia / Invitado",
     familyPlaceholder: "Ej. Familia Gómez o Sofía Pérez",
-    peopleLabel: "¿Cuántos pases ejecutivos confirmas?",
-    peoplePlaceholder: "Selecciona los pases",
+    // peopleLabel: "¿Cuántos pases ejecutivos confirmas?",
+    // peoplePlaceholder: "Selecciona los pases",
     submit: "Confirmar Asistencia por WhatsApp",
     defaultFamily: "Asociado de Emiliano"
   },

@@ -867,8 +867,8 @@ const invitationContent = {
         phone: "+52 56 1057 2735",
         familyLabel: "Nombre de tu Familia / Invitado",
         familyPlaceholder: "Ej. Familia Gómez o Sofía Pérez",
-        peopleLabel: "¿Cuántos pases ejecutivos confirmas?",
-        peoplePlaceholder: "Selecciona los pases",
+        // peopleLabel: "¿Cuántos pases ejecutivos confirmas?",
+        // peoplePlaceholder: "Selecciona los pases",
         submit: "Confirmar Asistencia por WhatsApp",
         defaultFamily: "Asociado de Emiliano"
     },
@@ -3766,8 +3766,6 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$data$2f$invitation$2e
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$whatsapp$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/lib/whatsapp.ts [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$message$2d$circle$2d$more$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__MessageCircleMore$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/message-circle-more.mjs [app-ssr] (ecmascript) <export default as MessageCircleMore>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$phone$2d$call$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__PhoneCall$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/phone-call.mjs [app-ssr] (ecmascript) <export default as PhoneCall>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$plus$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Plus$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/plus.mjs [app-ssr] (ecmascript) <export default as Plus>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$minus$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Minus$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/minus.mjs [app-ssr] (ecmascript) <export default as Minus>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$user$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__User$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/user.mjs [app-ssr] (ecmascript) <export default as User>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$users$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Users$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/users.mjs [app-ssr] (ecmascript) <export default as Users>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$message$2d$square$2d$text$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__MessageSquareText$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/message-square-text.mjs [app-ssr] (ecmascript) <export default as MessageSquareText>");
@@ -3781,27 +3779,28 @@ function RSVPSection() {
     const content = __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$data$2f$invitation$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["invitationContent"];
     const [confirmType, setConfirmType] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("family");
     const [name, setName] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("");
-    const [guestCount, setGuestCount] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(2);
+    // const [guestCount, setGuestCount] = useState(2);
     const [customNote, setCustomNote] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("");
-    const handleIncrement = ()=>{
-        setGuestCount((prev)=>Math.min(prev + 1, 10));
-    };
-    const handleDecrement = ()=>{
-        setGuestCount((prev)=>Math.max(prev - 1, 1));
-    };
+    // const handleIncrement = () => {
+    //   setGuestCount((prev) => Math.min(prev + 1, 10));
+    // };
+    // const handleDecrement = () => {
+    //   setGuestCount((prev) => Math.max(prev - 1, 1));
+    // };
     const handleTypeChange = (type)=>{
         setConfirmType(type);
-        if (type === "individual") {
-            setGuestCount(1);
-        } else {
-            setGuestCount(2);
-        }
+    // if (type === "individual") {
+    //   setGuestCount(1);
+    // } else {
+    //   setGuestCount(2);
+    // }
     };
     // Boss Baby / Baptism themed WhatsApp message
     const whatsappMessage = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useMemo"])(()=>{
         const displayName = name.trim() || content.rsvp.defaultFamily;
         const typeLabel = confirmType === "individual" ? "Pase Individual" : "Pase Familiar";
-        let msg = `🍼 *¡Hola papás de Emiliano!*\n\nMe hace muy feliz confirmar mi asistencia para el Bautizo y Primer Añito de Emiliano 👶👑\n\n✨ *Detalles de Confirmación:*\n• Tipo de Pase: ${typeLabel}\n• Nombre del Invitado: ${displayName}\n• Pases Reservados: ${guestCount} ${guestCount === 1 ? "pase" : "pases"}`;
+        let msg = `🍼 *¡Hola papás de Emiliano!*\n\nMe hace muy feliz confirmar mi asistencia para el Bautizo y Primer Añito de Emiliano 👶👑\n\n✨ *Detalles de Confirmación:*\n• Tipo de Pase: ${typeLabel}\n• Nombre del Invitado: ${displayName}`;
+        // • Pases Reservados: ${guestCount} ${guestCount === 1 ? "pase" : "pases"}
         if (customNote.trim()) {
             msg += `\n\n💌 *Mensaje con cariño:*\n"${customNote.trim()}"`;
         }
@@ -3810,7 +3809,6 @@ function RSVPSection() {
     }, [
         confirmType,
         name,
-        guestCount,
         customNote,
         content.rsvp.defaultFamily
     ]);
@@ -3825,7 +3823,7 @@ function RSVPSection() {
                         children: content.rsvp.title
                     }, void 0, false, {
                         fileName: "[project]/src/features/invitation/sections/rsvp-section.tsx",
-                        lineNumber: 52,
+                        lineNumber: 53,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -3833,7 +3831,7 @@ function RSVPSection() {
                         children: content.rsvp.heading
                     }, void 0, false, {
                         fileName: "[project]/src/features/invitation/sections/rsvp-section.tsx",
-                        lineNumber: 55,
+                        lineNumber: 56,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3841,13 +3839,13 @@ function RSVPSection() {
                         children: content.rsvp.description
                     }, void 0, false, {
                         fileName: "[project]/src/features/invitation/sections/rsvp-section.tsx",
-                        lineNumber: 58,
+                        lineNumber: 59,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/features/invitation/sections/rsvp-section.tsx",
-                lineNumber: 51,
+                lineNumber: 52,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3864,7 +3862,7 @@ function RSVPSection() {
                                         children: "¿Cómo confirmarás tu asistencia?"
                                     }, void 0, false, {
                                         fileName: "[project]/src/features/invitation/sections/rsvp-section.tsx",
-                                        lineNumber: 68,
+                                        lineNumber: 69,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3886,7 +3884,7 @@ function RSVPSection() {
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/features/invitation/sections/rsvp-section.tsx",
-                                                lineNumber: 72,
+                                                lineNumber: 73,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -3898,7 +3896,7 @@ function RSVPSection() {
                                                         className: "h-4 w-4"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/features/invitation/sections/rsvp-section.tsx",
-                                                        lineNumber: 93,
+                                                        lineNumber: 92,
                                                         columnNumber: 17
                                                     }, this),
                                                     "Grupo / Familia"
@@ -3911,13 +3909,13 @@ function RSVPSection() {
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/features/invitation/sections/rsvp-section.tsx",
-                                        lineNumber: 71,
+                                        lineNumber: 72,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/features/invitation/sections/rsvp-section.tsx",
-                                lineNumber: 67,
+                                lineNumber: 68,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3928,7 +3926,7 @@ function RSVPSection() {
                                         children: confirmType === "individual" ? "Nombre Completo del Invitado" : content.rsvp.familyLabel
                                     }, void 0, false, {
                                         fileName: "[project]/src/features/invitation/sections/rsvp-section.tsx",
-                                        lineNumber: 101,
+                                        lineNumber: 100,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -3939,82 +3937,14 @@ function RSVPSection() {
                                         className: "w-full rounded-2xl px-4 py-3 text-sm text-slate-800 outline-none glass-input font-medium"
                                     }, void 0, false, {
                                         fileName: "[project]/src/features/invitation/sections/rsvp-section.tsx",
-                                        lineNumber: 106,
+                                        lineNumber: 105,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/features/invitation/sections/rsvp-section.tsx",
-                                lineNumber: 100,
+                                lineNumber: 99,
                                 columnNumber: 11
-                            }, this),
-                            confirmType === "family" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "space-y-2",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "text-[0.68rem] font-bold uppercase tracking-[0.3em] text-sky-700 block",
-                                        children: content.rsvp.peopleLabel
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/features/invitation/sections/rsvp-section.tsx",
-                                        lineNumber: 122,
-                                        columnNumber: 15
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "flex items-center gap-4 p-2 rounded-2xl bg-white/70 border border-sky-100/30 max-w-[200px] justify-between",
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                                type: "button",
-                                                onClick: handleDecrement,
-                                                disabled: guestCount <= 2,
-                                                className: "flex h-9 w-9 items-center justify-center rounded-xl bg-sky-50 text-sky-700 border border-sky-100 hover:bg-sky-100 disabled:opacity-40 disabled:cursor-not-allowed cursor-pointer transition-all active:scale-95",
-                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$minus$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Minus$3e$__["Minus"], {
-                                                    className: "h-4 w-4"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/features/invitation/sections/rsvp-section.tsx",
-                                                    lineNumber: 132,
-                                                    columnNumber: 19
-                                                }, this)
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/features/invitation/sections/rsvp-section.tsx",
-                                                lineNumber: 126,
-                                                columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "text-base font-black text-slate-800",
-                                                children: guestCount
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/features/invitation/sections/rsvp-section.tsx",
-                                                lineNumber: 134,
-                                                columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                                type: "button",
-                                                onClick: handleIncrement,
-                                                disabled: guestCount >= 8,
-                                                className: "flex h-9 w-9 items-center justify-center rounded-xl bg-sky-50 text-sky-700 border border-sky-100 hover:bg-sky-100 disabled:opacity-40 disabled:cursor-not-allowed cursor-pointer transition-all active:scale-95",
-                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$plus$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Plus$3e$__["Plus"], {
-                                                    className: "h-4 w-4"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/features/invitation/sections/rsvp-section.tsx",
-                                                    lineNumber: 143,
-                                                    columnNumber: 19
-                                                }, this)
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/features/invitation/sections/rsvp-section.tsx",
-                                                lineNumber: 137,
-                                                columnNumber: 17
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/src/features/invitation/sections/rsvp-section.tsx",
-                                        lineNumber: 125,
-                                        columnNumber: 15
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/src/features/invitation/sections/rsvp-section.tsx",
-                                lineNumber: 121,
-                                columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "space-y-2",
@@ -4026,14 +3956,14 @@ function RSVPSection() {
                                                 className: "h-4 w-4 text-sky-500"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/features/invitation/sections/rsvp-section.tsx",
-                                                lineNumber: 152,
+                                                lineNumber: 151,
                                                 columnNumber: 15
                                             }, this),
                                             "Mensaje especial"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/features/invitation/sections/rsvp-section.tsx",
-                                        lineNumber: 151,
+                                        lineNumber: 150,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("textarea", {
@@ -4044,13 +3974,13 @@ function RSVPSection() {
                                         className: "w-full rounded-2xl px-4 py-3 text-sm text-slate-800 outline-none glass-input font-medium resize-none"
                                     }, void 0, false, {
                                         fileName: "[project]/src/features/invitation/sections/rsvp-section.tsx",
-                                        lineNumber: 155,
+                                        lineNumber: 154,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/features/invitation/sections/rsvp-section.tsx",
-                                lineNumber: 150,
+                                lineNumber: 149,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4066,14 +3996,14 @@ function RSVPSection() {
                                                 className: "h-5 w-5 animate-pulse"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/features/invitation/sections/rsvp-section.tsx",
-                                                lineNumber: 172,
+                                                lineNumber: 171,
                                                 columnNumber: 15
                                             }, this),
                                             content.rsvp.submit
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/features/invitation/sections/rsvp-section.tsx",
-                                        lineNumber: 166,
+                                        lineNumber: 165,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4083,26 +4013,26 @@ function RSVPSection() {
                                                 className: "h-4 w-4 text-sky-700 shrink-0"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/features/invitation/sections/rsvp-section.tsx",
-                                                lineNumber: 177,
+                                                lineNumber: 176,
                                                 columnNumber: 15
                                             }, this),
                                             content.rsvp.phone
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/features/invitation/sections/rsvp-section.tsx",
-                                        lineNumber: 176,
+                                        lineNumber: 175,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/features/invitation/sections/rsvp-section.tsx",
-                                lineNumber: 165,
+                                lineNumber: 164,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/features/invitation/sections/rsvp-section.tsx",
-                        lineNumber: 65,
+                        lineNumber: 66,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4119,7 +4049,7 @@ function RSVPSection() {
                                                 children: "Mensaje Generado"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/features/invitation/sections/rsvp-section.tsx",
-                                                lineNumber: 187,
+                                                lineNumber: 186,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4130,26 +4060,26 @@ function RSVPSection() {
                                                         children: whatsappMessage
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/features/invitation/sections/rsvp-section.tsx",
-                                                        lineNumber: 193,
+                                                        lineNumber: 192,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                         className: "absolute left-[-8px] top-4 w-0 h-0 border-t-[8px] border-t-[#E2F6DD] border-l-[8px] border-l-transparent"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/features/invitation/sections/rsvp-section.tsx",
-                                                        lineNumber: 198,
+                                                        lineNumber: 197,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/features/invitation/sections/rsvp-section.tsx",
-                                                lineNumber: 192,
+                                                lineNumber: 191,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/features/invitation/sections/rsvp-section.tsx",
-                                        lineNumber: 186,
+                                        lineNumber: 185,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -4157,13 +4087,13 @@ function RSVPSection() {
                                         children: "Este mensaje se abrirá en tu WhatsApp listo para enviarse."
                                     }, void 0, false, {
                                         fileName: "[project]/src/features/invitation/sections/rsvp-section.tsx",
-                                        lineNumber: 202,
+                                        lineNumber: 201,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/features/invitation/sections/rsvp-section.tsx",
-                                lineNumber: 185,
+                                lineNumber: 184,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
@@ -4172,25 +4102,25 @@ function RSVPSection() {
                                 className: "absolute bottom-[-10px] right-[-10px] z-10 w-32 md:w-40 object-contain pointer-events-none drop-shadow-[0_12px_24px_rgba(2,132,199,0.18)]"
                             }, void 0, false, {
                                 fileName: "[project]/src/features/invitation/sections/rsvp-section.tsx",
-                                lineNumber: 208,
+                                lineNumber: 207,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/features/invitation/sections/rsvp-section.tsx",
-                        lineNumber: 184,
+                        lineNumber: 183,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/features/invitation/sections/rsvp-section.tsx",
-                lineNumber: 63,
+                lineNumber: 64,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/features/invitation/sections/rsvp-section.tsx",
-        lineNumber: 50,
+        lineNumber: 51,
         columnNumber: 5
     }, this);
 }

@@ -3,7 +3,7 @@
 import { useMemo, useState } from "react";
 import { invitationContent } from "@/data/invitation";
 import { buildWhatsAppLink } from "@/lib/whatsapp";
-import { MessageCircleMore, PhoneCall, Plus, Minus, User, Users, MessageSquareText } from "lucide-react";
+import { MessageCircleMore, PhoneCall, /* Plus, Minus, */ User, Users, MessageSquareText } from "lucide-react";
 
 type ConfirmType = "individual" | "family";
 
@@ -11,24 +11,24 @@ export function RSVPSection() {
   const content = invitationContent;
   const [confirmType, setConfirmType] = useState<ConfirmType>("family");
   const [name, setName] = useState("");
-  const [guestCount, setGuestCount] = useState(2);
+  // const [guestCount, setGuestCount] = useState(2);
   const [customNote, setCustomNote] = useState("");
 
-  const handleIncrement = () => {
-    setGuestCount((prev) => Math.min(prev + 1, 10));
-  };
+  // const handleIncrement = () => {
+  //   setGuestCount((prev) => Math.min(prev + 1, 10));
+  // };
 
-  const handleDecrement = () => {
-    setGuestCount((prev) => Math.max(prev - 1, 1));
-  };
+  // const handleDecrement = () => {
+  //   setGuestCount((prev) => Math.max(prev - 1, 1));
+  // };
 
   const handleTypeChange = (type: ConfirmType) => {
     setConfirmType(type);
-    if (type === "individual") {
-      setGuestCount(1);
-    } else {
-      setGuestCount(2);
-    }
+    // if (type === "individual") {
+    //   setGuestCount(1);
+    // } else {
+    //   setGuestCount(2);
+    // }
   };
 
   // Boss Baby / Baptism themed WhatsApp message
@@ -36,13 +36,14 @@ export function RSVPSection() {
     const displayName = name.trim() || content.rsvp.defaultFamily;
     const typeLabel = confirmType === "individual" ? "Pase Individual" : "Pase Familiar";
 
-    let msg = `🍼 *¡Hola papás de Emiliano!*\n\nMe hace muy feliz confirmar mi asistencia para el Bautizo y Primer Añito de Emiliano 👶👑\n\n✨ *Detalles de Confirmación:*\n• Tipo de Pase: ${typeLabel}\n• Nombre del Invitado: ${displayName}\n• Pases Reservados: ${guestCount} ${guestCount === 1 ? "pase" : "pases"}`;
+    let msg = `🍼 *¡Hola papás de Emiliano!*\n\nMe hace muy feliz confirmar mi asistencia para el Bautizo y Primer Añito de Emiliano 👶👑\n\n✨ *Detalles de Confirmación:*\n• Tipo de Pase: ${typeLabel}\n• Nombre del Invitado: ${displayName}`;
+    // • Pases Reservados: ${guestCount} ${guestCount === 1 ? "pase" : "pases"}
     if (customNote.trim()) {
       msg += `\n\n💌 *Mensaje con cariño:*\n"${customNote.trim()}"`;
     }
     msg += `\n\n¡Nos vemos pronto para celebrar juntos! 🎂🎈`;
     return msg;
-  }, [confirmType, name, guestCount, customNote, content.rsvp.defaultFamily]);
+  }, [confirmType, name, customNote, content.rsvp.defaultFamily]);
 
   const whatsappLink = buildWhatsAppLink(content.rsvp.phone, whatsappMessage);
 
@@ -72,11 +73,10 @@ export function RSVPSection() {
               <button
                 type="button"
                 onClick={() => handleTypeChange("individual")}
-                className={`flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl font-bold text-xs md:text-sm transition-all cursor-pointer ${
-                  confirmType === "individual"
+                className={`flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl font-bold text-xs md:text-sm transition-all cursor-pointer ${confirmType === "individual"
                     ? "bg-sky-700 text-white shadow-md"
                     : "text-slate-600 hover:text-sky-700 hover:bg-sky-50/50"
-                }`}
+                  }`}
               >
                 <User className="h-4 w-4" />
                 Individual
@@ -84,11 +84,10 @@ export function RSVPSection() {
               <button
                 type="button"
                 onClick={() => handleTypeChange("family")}
-                className={`flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl font-bold text-xs md:text-sm transition-all cursor-pointer ${
-                  confirmType === "family"
+                className={`flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl font-bold text-xs md:text-sm transition-all cursor-pointer ${confirmType === "family"
                     ? "bg-sky-700 text-white shadow-md"
                     : "text-slate-600 hover:text-sky-700 hover:bg-sky-50/50"
-                }`}
+                  }`}
               >
                 <Users className="h-4 w-4" />
                 Grupo / Familia
@@ -117,7 +116,7 @@ export function RSVPSection() {
           </div>
 
           {/* Seat Counter Buttons */}
-          {confirmType === "family" && (
+          {/* {confirmType === "family" && (
             <div className="space-y-2">
               <span className="text-[0.68rem] font-bold uppercase tracking-[0.3em] text-sky-700 block">
                 {content.rsvp.peopleLabel}
@@ -144,7 +143,7 @@ export function RSVPSection() {
                 </button>
               </div>
             </div>
-          )}
+          )} */}
 
           {/* Custom Note */}
           <div className="space-y-2">
@@ -172,7 +171,7 @@ export function RSVPSection() {
               <MessageCircleMore className="h-5 w-5 animate-pulse" />
               {content.rsvp.submit}
             </a>
-            
+
             <div className="inline-flex items-center justify-center gap-2 rounded-2xl border border-sky-100 bg-white/80 px-5 py-4 text-xs font-bold text-slate-700 shadow-sm">
               <PhoneCall className="h-4 w-4 text-sky-700 shrink-0" />
               {content.rsvp.phone}
@@ -193,7 +192,7 @@ export function RSVPSection() {
                 <div className="whitespace-pre-line font-sans">
                   {whatsappMessage}
                 </div>
-                
+
                 {/* WhatsApp bubble triangle pin on the left */}
                 <div className="absolute left-[-8px] top-4 w-0 h-0 border-t-[8px] border-t-[#E2F6DD] border-l-[8px] border-l-transparent" />
               </div>
@@ -203,7 +202,7 @@ export function RSVPSection() {
               Este mensaje se abrirá en tu WhatsApp listo para enviarse.
             </p>
           </div>
-          
+
           {/* Pointing Boss Baby from User's template */}
           <img
             src="/images/jefe_confirmacion_final.png"
